@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1 + Fill 2 + Fill 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Static" sketch:type="MSArtboardGroup" transform="translate(-941.000000, -1758.000000)">
+            <g id="//-Body" sketch:type="MSLayerGroup" transform="translate(169.000000, 179.000000)">
+                <g id="::-Aside-+-::-Primary" transform="translate(0.000000, 683.000000)" sketch:type="MSShapeGroup">
+                    <g id="::-Aside" transform="translate(751.000000, 0.000000)">
+                        <g id="Financial-Accountability" transform="translate(15.000000, 717.000000)">
+                            <g id="Pie-Chart" transform="translate(0.000000, 179.000000)">
+                                <g id="Fill-1-+-Fill-2-+-Fill-3" transform="translate(6.000000, 0.000000)">
+                                    <path d="M79.5949129,21.5549768 C68.0472641,1.12699308 42.1766774,-6.04333961 21.8113338,5.53952852 C1.44599024,17.1226958 -5.7023554,43.0728559 5.84499512,63.5008397 C17.3926439,83.9288234 43.2632307,91.0991561 63.6285742,79.516288 C83.9939178,67.9331207 91.1422634,41.9829606 79.5949129,21.5549768 M19.7769171,55.5768846 C12.592184,42.8670234 17.0398049,26.7211347 29.7109909,19.5143026 C42.3818787,12.3074705 58.4782578,16.7687715 65.6629909,29.4789319 C72.847724,42.1890923 68.4001031,58.3346818 55.7289171,65.5415139 C43.0580293,72.748346 26.9616502,68.287045 19.7769171,55.5768846" id="Fill-1" fill="#84BF41"></path>
+                                    <path d="M78.8853575,20.3705421 L65.1756376,28.6654745 C65.3405742,28.934433 65.5064056,29.2021948 65.6629909,29.4789319 C65.7709603,29.6701049 65.8681923,29.8645688 65.970793,30.0572376 L80.1058286,22.5150301 C79.9355233,22.1949126 79.7741659,21.8724017 79.5949129,21.5549768 C79.3670439,21.1519878 79.1239638,20.7633592 78.8853575,20.3705421" id="Fill-2" fill="#D2DB2F"></path>
+                                    <path d="M65.986899,30.0871552 C66.721508,31.4684472 67.3290592,32.8850419 67.7991136,34.326169 L82.9115401,29.0143128 C82.1700711,26.8034079 81.2320502,24.6284039 80.1013547,22.5063541 L65.986899,30.0871552" id="Fill-3" fill="#198C45"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

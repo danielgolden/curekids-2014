@@ -1,0 +1,220 @@
+<?php
+require_once "../wp-load.php";
+if ($_GET['crwd']) {
+    $crwd = $_GET['crwd'];
+}
+?>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CURE | Church Partnerships</title>
+        <meta name="description" content="Nyamphoka Yakobo, from Malawi, has received treatment for Blount's Disease.  See his story and meet other children like Nyamphoka who need healing.">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+        <link rel="stylesheet" href="">
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> for a better experience using this site.</p>
+        <![endif]-->
+
+        <header class="primary-header">
+            <a href="/" class="primary-header-logo">CURE</a>
+            
+            <nav class="primary-nav-container">            
+                <ul class="primary-nav">
+                    <li class="primary-nav-item current-primary-nav-item"><a class="primary-nav-item-link ck_primary-nav-item-link" href="/curekids">CURE<em>kids</em></a></li>
+                    <li class="primary-nav-item"><a class="primary-nav-item-link primary-login-link" href="#">Login</a></li>
+                    <li class="primary-nav-item"><a class="primary-nav-item-link" href="/blog">Blog</a></li>
+                    <li class="primary-nav-item">
+                        <a class="primary-nav-item-link" href="/about">About</a>
+
+                        <ul class="subnav">
+                            <li><a href="/about/founders">Founders</a></li>                            
+                            <li><a href="/about/financial-accountability">Financial Accountability</a></li>
+                            <li><a href="/about/management-team">Meet the Management Team</a></li>                            
+                            <li><a href="/about/board-of-directors">Board of Directors</a></li>
+                            <li><a href="/jobs">Jobs at CURE</a></li>
+                            <li class="subHead">Our Partners</li>
+                            <li><a href="/about/partnerships">Nonprofits &amp; Foundations</a></li>
+                            <li><a href="/about/corporate-partners">Corporations</a></li>
+                            <li><a href="/about/tech-partners">Technology</a></li>
+                            <li class="subHead">Media</li>
+                            <li><a href="/media/videos">Videos</a></li>
+                            <li><a href="/media/photos">Photos</a></li>
+                            <li><a href="/media/press">Press</a></li>
+                            <li><a href="/media/publications">Publications</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav-item">
+                        <a class="primary-nav-item-link" href="/hospitals">Hospitals</a>
+
+                        <ul class="subnav">
+                            <li><a href="/hospitals/afghanistan">Afghanistan</a></li>
+                            <li><a href="/hospitals/dominican-republic">Dominican Republic</a></li>
+                            <li><a href="/hospitals/ethiopia">Ethiopia</a></li>
+                            <li><a href="/hospitals/kenya">Kenya</a></li>
+                            <li><a href="/hospitals/malawi">Malawi</a></li>
+                            <li><a href="/hospitals/niger">Niger</a></li>
+                            <li><a href="/tebow">Philippines (Tebow)</a></li>
+                            <li><a href="/hospitals/uganda">Uganda</a></li>
+                            <li><a href="/hospitals/united-arab-emirates">United Arab Emirates</a></li>
+                            <li><a href="/hospitals/zambia">Zambia</a></li>
+                            <li class="subHead">Specialty Programs</li>
+                            <li><a href="/clubfoot">CURE Clubfoot Worldwide</a></li>
+                            <li><a href="/hydrocephalus">CURE Hydrocephalus</a></li>
+                        </ul>
+                    </li>
+                    <li class="primary-nav-item" id="nav-help-now" style="width: 91px;">
+                        <a class="primary-nav-item-link" href="/help-now">Help Now</a>
+
+                        <ul class="subnav">
+                            <li><a href="/help-now/give">Ways to Give</a></li>
+                            <li><a href="/help-now/pray">Pray with Us</a></li>
+                            <li><a href="/help-now/do">Get Involved</a></li>
+                            <li><a href="/help-now/go">Go (Short-term Missions)</a></li>
+                            <li><a href="/jobs">Jobs at CURE</a></li>
+                            <li><a href="/store">CURE Store</a></li>
+                            <li><a href="/events">Events &amp; Concerts</a></li>
+                            <li class="subHead">Programs</li>
+                            <li><a href="/champion">Champion (Fitness)</a></li>
+                            <li><a href="/church">Church Partnerships</a></li>
+                            <li><a href="/u">CURE U (University)</a></li>
+                            <li><a href="/curemoms">CUREMoms</a></li>
+                        </ul>
+                    </li>                
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="ck-profile-container">
+                <header class="ck-profile-header">
+                    <h2 class="child-profile-name">Kabirou</h3>
+                    <span class="child-profile-country">From Zambia</span>
+                    <a href="#" class="child-profile-follow-button">Follow</a>
+
+                    <ul class="ck-profile-info">
+                        <li class="ck-profile-info-item"><span class="ck-profile-info-item-label">Age</span> 17 Years Old</li>
+                        <li class="ck-profile-info-item"><span class="ck-profile-info-item-label">Condition</span> Hydrocephalus</li>
+                        <li class="ck-profile-info-item"><span class="ck-profile-info-item-label">In Hospital</span> In Hospital</li>
+                    </ul>
+                </header>
+
+                <div class="ck-profile-photos-container">
+                    <img src="/img/curekids/primary-photo-placeholder.jpg" alt="Photo of Kabirou" class="ck-profile-primary-photo">
+                    <div class="ck-profile-secondary-photos-container">
+                        <span class="ck-profile-secondary-photo-caption">Before</span>
+                        <img src="before-photo-placeholder.png" alt="Before photo of Kabirou" class="ck-profile-secondary-photo">
+                    </div>
+                    <div class="ck-profile-secondary-photos-container">
+                        <span class="ck-profile-secondary-photo-caption">After</span>
+                        <img src="after-photo-placeholder.png" alt="After photo of Kabirou" class="ck-profile-secondary-photo">
+                    </div>
+                </div>
+
+                <section class="ck-profile-about">
+                    <h3 class="ck-profile-section-title">About Kabirou</h3>
+                    <p class="ck-profile-about-copy">
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venen&hellip;
+                        <a href="#" class="read-more-link">Read more</a>
+                    </p>
+                </section>
+
+                <section class="ck-profile-updates">
+                    <h3 class="ck-profile-section-title">Updates</h3>
+                    <div class="ck-profile-update-container">
+                        <span class="ck-profile-update-date">01/15/2014</span>
+                        <p class="ck-profile-update-copy">
+                        Adrian is scheduled for a followup appointment on March 4, 2015! We will 
+                        keep you updated should anything change. Thanks for following his story 
+                        and continued prayer for this.
+                        </p>
+                    </div>
+                    <div class="ck-profile-update-container">
+                        <span class="ck-profile-update-date">01/15/2014</span>
+                        <p class="ck-profile-update-copy">
+                        Check out who is doing MUCH better today… <a href="#">http://bit.ly/LqC4TR</a> He was 
+                        eating some rice and chicken when we met up with him and his smiles are 
+                        definitely back in action! It was a great day for him, and us!
+                        </p>
+
+                        <a href="" class="ck-profile-get-well-inline-media">
+                            <img src="img/zoom-icon.svg" alt="play icon" class="zoom-icon">
+                            <img src="img/get-well-video-placeholder.jpg" alt="Photo of Kabirou" class="get-well-media-placeholder">
+                        </a>
+                    </div>
+                    <div class="ck-profile-update-container">
+                        <span class="ck-profile-update-date">01/15/2014</span>
+                        <p class="ck-profile-update-copy">
+                        Our little guy just isn't feeling like himself today. 
+                        The surgery really took it out of him. Would you please join us in praying over him 
+                        that he would heal quickly?
+                        </p>
+                    </div>
+                    <div class="ck-profile-update-container">
+                        <span class="ck-profile-update-date">01/15/2014</span>
+                        <p class="ck-profile-update-copy">
+                        Here is a pic of Adrian's condition before his surgery yesterday. As you can see, 
+                        the right femur has developed at a very poor angle for the bone to fit into socket, 
+                        as a result of his bicycle accident. (Note: some minor editing has been done to this 
+                        picture to protect the individual) <a href="#">http://bit.ly/1j8pc2x</a> Also, he is now in recovery 
+                        and doing well! 
+                        </p>
+
+                        <a href="#" class="ck-profile-get-well-inline-media">
+                            <img src="img/zoom-icon.svg" alt="zoom icon" class="zoom-icon">
+                            <img src="img/get-well-photo-placeholder.jpg" alt="Photo of Kabirou" class="get-well-media-placeholder">
+                        </a>
+                    </div>
+                    <div class="ck-profile-update-container">
+                        <span class="ck-profile-update-date">01/15/2014</span>
+                        <p class="ck-profile-update-copy">
+                        Surgery collage of Adrian's surgery. Check it out. <a href="#">http://bit.ly/Kjn8FI</a> 
+                        </p>
+                    </div>
+
+                    <a href="#" class="primary-button">View Older Updates</a>
+                </section>
+
+                <section class="ck-profile-get-well">
+                    <h3 class="ck-profile-section-title">Send a Get Well Message</h3>
+                    <p class="ck-profile-get-well-copy">
+                        Cum sociis natoque penatibus et magnis dis parturient montes.
+                        <a href="#">View get well messages</a>
+                    </p>
+
+                    <form action="" class="send-get-well-message-form">
+                        <textarea name="get-well-message-content" cols="30" rows="10" class="send-get-well-message-form-input" placeholder="Enter your get well message here..."></textarea>
+                        <a href="#" class="ck-profile-get-well-add-photo-button">Add Photo</a>
+                        <a href="#" class="ck-profile-get-well-add-video-button">Add Video</a>
+                        <div class="get-well-form-checkbox-container">
+                            <input type="checkbox" class="get-well-form-checkbox">
+                            <span class="get-well-form-checkbox-label">Send Anonymously</span>
+                        </div>
+                        <input type="submit" class="submit-button" value="Send Message">
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li>CURE International is a 501(c)3 tax exempt organization</li>
+                <li><a href="http://glyphicons.com/">icons by Glyphcons</a></li>
+                <li><a href="/about/">Find Out More</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

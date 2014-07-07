@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>Video Camera Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Static" sketch:type="MSArtboardGroup" transform="translate(-349.000000, -2162.000000)" fill="#988C80">
+            <g id="//-Body" sketch:type="MSLayerGroup" transform="translate(169.000000, 179.000000)">
+                <g id="::-Aside-+-::-Primary" transform="translate(0.000000, 683.000000)" sketch:type="MSShapeGroup">
+                    <g id="::-Primary" transform="translate(0.000000, 1.000000)">
+                        <g id="Get-Well-Form" transform="translate(53.000000, 1072.000000)">
+                            <g id="Form" transform="translate(0.000000, 90.000000)">
+                                <g id="Add-Video-Button" transform="translate(127.000000, 137.000000)">
+                                    <path d="M12.899,3.354 L12.899,1.00721739 C12.899,0.453391304 12.4645,0 11.9335,0 L0.96525,0 C0.4345,0 0,0.453391304 0,1.00721739 L0,10.7332174 C0,11.2870435 0.4345,11.7404348 0.96525,11.7404348 L11.9335,11.7404348 C12.4645,11.7404348 12.899,11.2870435 12.899,10.7332174 L12.899,8.41669565 L12.89925,8.44852174 L17.947,10.9173913 L17.947,0.862434783 L12.899,3.354" id="Video-Camera-Icon"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
