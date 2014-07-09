@@ -1,0 +1,396 @@
+@import "compass";
+@import "_normalize.scss";
+
+$primary-green: #198C45;
+$secondary-brown: #A79D83;
+
+* {
+	@include box-sizing(border-box);
+}
+
+body {
+	margin: 0;
+	font-size: 16px;
+	font-family: 'Frutiger LT Std', sans-serif;
+	background-color: #ede7dc;
+	@include filter-gradient(#ede7dc, #ffffff, vertical);
+	@include background-image(linear-gradient(top,  #ede7dc 0%,#ffffff 500px));
+
+	&.no-ck-bar {
+		background-color: saturate(#e3dcd1, 10%);
+		@include filter-gradient(saturate(#e3dcd1, 10%), #ffffff, vertical);
+		@include background-image(linear-gradient(top,  saturate(#e3dcd1, 10%) 0%,#ffffff 900px));
+	}
+}
+
+main {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #362F2D;
+}
+
+h3 {
+	font-size: 28px;
+	margin: 40px 0 15px;
+}
+
+p {
+	line-height: 27px;
+	color: darken(#706A68, 4%);
+}
+
+a {
+	padding: 0 0 1px 0;
+	color: $primary-green;
+	text-decoration: none;
+	border-bottom: 1px dotted $primary-green;
+}
+
+textarea {
+	width: 100%;
+	height: 116px;
+	padding: 16px 20px;
+	border: 1px solid #CEC9C0;
+	line-height: 27px;
+	color: darken(#706A68, 4%);
+	@include box-shadow(inset 0 3px 0 rgba(#F0F0F0, .7));
+	@include border-radius(3px);
+}
+
+/*-------------------------*/
+/*----- Header Styles -----*/
+/*-------------------------*/
+
+.primary-header {
+	height: 130px;
+	border-bottom: 1px solid #c4b4a1;
+	background-color: #fff;
+	@include box-shadow(0 2px 0 rgba(#000, .06));
+}
+
+.primary-header-contents {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+a.primary-header-logo {
+	display: block;
+	width: 237px;
+	height: 69px;
+	position: relative;
+	top: 28px;
+	border-bottom: none;
+	background-image: url(/img/cure-logo.svg);
+	background-repeat: no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.primary-nav-container {
+	@include pie-clearfix();
+}
+
+.primary-nav {
+	position: relative;
+	bottom: 34px;
+	float: right;
+	@include pie-clearfix();
+}
+
+.primary-nav-item {
+	display: inline;
+	margin-right: 35px;
+	position: relative;
+	list-style-type: none;
+
+	a {
+		text-decoration: none;
+		color: darken(#736357, 6%);
+		border-bottom: none;
+	}
+
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+
+a.primary-nav-item-link:after {
+	display: block;
+	padding-top: 10px;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	font-size: 12px;
+	color: #B3A092;
+}
+
+.curekids-primary-nav-item:after {
+	content: "Meet a child";
+}
+
+.about-primary-nav-item:after {
+	content: "Who we are";
+}
+
+.programs-primary-nav-item:after {
+	width: 82px;
+	content: "Where we are";
+}
+
+.stories-primary-nav-item:after {
+	content: "Our blog";
+}
+
+.join-primary-nav-item:after {
+	width: 76px;
+	content: "Get involved";
+}
+
+.subnav {
+	display: none;
+}
+
+a.btn-primary {
+	padding: 14px 18px 10px;
+	border: 1px solid #136231;
+	text-shadow: 0 1px rgba(0,0,0, .4);
+	text-decoration: none;
+	background-color: $primary-green;
+	color: #fff;
+	@include border-radius(3px);
+	@include box-shadow(0 2px 0 rgba(0,0,0, .13));
+
+	&:hover {
+		cursor: pointer;
+		border: 1px solid darken(#136231, 2%);
+		background-color: darken($primary-green, 2%);
+		@include box-shadow(0 1px 1px rgba(0,0,0, .23));
+	}
+
+	&:active {
+		border: 1px solid darken(#136231, 5%);
+		background-color: darken($primary-green, 4%);
+		@include box-shadow(0 1px 0 rgba(0,0,0, .13));
+	}
+}
+
+.primary-header .btn-primary {
+	margin-left: 40px;
+	position: relative;
+	top: 8px;
+	font-size: 15px;
+}
+
+a.btn-secondary {
+	padding: 11px 20px 7px;
+	border: 1px solid #8C7D71;
+	text-shadow: 0 1px rgba(0,0,0, .4);
+	text-decoration: none;
+	font-size: 14px;
+	background-color: $secondary-brown;
+	color: #fff;
+	@include border-radius(3px);
+	@include box-shadow(0 2px 0 rgba(0,0,0, .13));
+
+	&:hover {
+		cursor: pointer;
+		border: 1px solid darken(#8C7D71, 2%);
+		background-color: darken($secondary-brown, 4%);
+		@include box-shadow(0 1px 1px rgba(0,0,0, .23));
+	}
+
+	&:active {
+		border: 1px solid darken(#8C7D71, 5%);
+		background-color: darken(#A79D83, 8%);
+		@include box-shadow(0 1px 0 rgba(0,0,0, .13));
+	}
+}
+
+.btn-view-more {
+	display: block;
+	margin: 35px auto 25px;
+	text-align: center;
+}
+
+/*-------------------------*/
+/*------- CK Profile ------*/
+/*-------------------------*/
+
+.ck-profile-container {
+	margin: 50px 0 0 0;
+	overflow: hidden;
+	background-color: #fff;
+	@include border-radius(3px);
+	@include box-shadow(0 0 0 5px rgba(255,255,255, .21), 0 0 0 6px rgba(0,0,0, .07));
+	// @include box-shadow(0 0 0 6px rgba(0,0,0, .04));
+}
+
+.ck-profile-header {
+	height: 100px;
+	position: relative;
+	@include pie-clearfix();
+}
+
+.ck-profile-name {
+	float: left;
+	margin: 25px 0 0 40px;
+	font-size: 38px;
+}
+
+.ck-profile-country {
+	clear: left;
+	float: left;
+	display: block;
+	margin: -4px 0 0 42px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #999;
+}
+
+.ck-profile-container .btn-ck-follow {
+	padding: 11px 18px 7px 14px;
+	position: absolute;
+	left: -90px;
+	top: 33px;
+
+	&:after {
+		content: " ";
+		display: inline-block;
+		width: 19px;
+		height: 13px;
+		position: relative;
+		left: 6px;
+		top: 1px;
+		background-image: url(/img/follow-icon.svg);
+	}
+}
+
+.ck-profile-header-col-1 {
+	float: left;
+	@include pie-clearfix();
+}
+
+.ck-profile-header-col-2 {
+	height: 100px;
+	margin: 0;
+	position: relative;
+	float: right;
+}
+
+.ck-profile-info {
+	margin: 0;
+	@include pie-clearfix();
+}
+
+.ck-profile-info-item {
+	display: block;
+	float: left;
+	height: 100px;
+	padding: 0 25px;
+	border-left: 1px solid rgba(0,0,0, .1);
+	font-size: 20px;
+	list-style-type: none;
+	color: #362F2D;
+}
+
+.ck-profile-info-item-label { 
+	display: block;
+	margin: 33px 0 6px 0;
+	color: #999;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.ck-profile-photos-container {
+	@include pie-clearfix();
+}
+
+.ck-profile-primary-photo {
+	width: 81.3888889%;
+	float: left;
+}
+
+.ck-profile-secondary-photo-container {
+	width: 18.6111111%;
+	max-height: 275px;
+	position: relative;
+	float: left;
+}
+
+.ck-profile-secondary-photo {
+	width: 100%;
+}
+
+.ck-profile-secondary-photo-caption {
+	padding: 10px 10px 3px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-shadow: 0 1px 1px rgba(0,0,0, .75);
+	background-color: rgba(0,0,0, .32);
+}
+
+.ck-profile-primary-content {
+	max-width: 700px;
+	float: left;
+	padding-left: 40px;
+}
+
+.ck-profile-section {
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(0,0,0, .15);
+}
+
+.ck-profile-update-date {
+	font-size: 13px;
+	color: #888;
+}
+
+.ck-profile-update-copy {
+	margin: 8px 0 0 0;
+
+	&:after {
+		content: "";
+		display: block;
+		width: 75px;
+		height: 1px; 
+		margin: 17px 0 25px;
+		background-color: rgba(0,0,0, .14);
+	}
+}
+
+a.ck-profile-get-well-inline-media {
+	width: 75px;
+	height: 75px;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	float: right;
+	border: none;
+	@include border-radius(5px);
+
+	.zoom-icon {
+		display: none;
+		position: absolute;
+		top: 23px;
+		left: 23px;		
+	}
+}
+
+.get-well-media-poster {
+	height: 75px;
+}
+
+.btn-more-updates {
+	width: 175px;
+}
