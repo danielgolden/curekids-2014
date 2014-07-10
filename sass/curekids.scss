@@ -2,6 +2,7 @@
 @import "_normalize.scss";
 
 $primary-green: #198C45;
+$lime-green: #92d400;
 $secondary-brown: #A79D83;
 
 * {
@@ -37,6 +38,10 @@ h3 {
 	margin: 40px 0 15px;
 }
 
+h4 {
+	font-size: 24px;
+}
+
 p {
 	line-height: 27px;
 	color: darken(#706A68, 4%);
@@ -49,15 +54,59 @@ a {
 	border-bottom: 1px dotted $primary-green;
 }
 
+input[type="text"] {
+	height: 45px;
+	padding: 8px 13px 0;
+	border: 1px solid #CEC9C0;
+	color: darken(#706A68, 4%);
+	@include border-radius(3px);
+	@include box-shadow(inset 0 3px 0 rgba(#F0F0F0, .7));
+}
+
 textarea {
+	@extend input[type="text"];
 	width: 100%;
 	height: 116px;
+	margin-bottom: 15px;
 	padding: 16px 20px;
-	border: 1px solid #CEC9C0;
 	line-height: 27px;
-	color: darken(#706A68, 4%);
-	@include box-shadow(inset 0 3px 0 rgba(#F0F0F0, .7));
-	@include border-radius(3px);
+}
+
+.input-wrap {
+	position: relative;
+
+	&.half-width {
+		display: inline-block;
+		float: left;
+		@include pie-clearfix();
+	}
+}
+
+.text-input-icon {
+	position: absolute;
+	top: 16px;
+	left: 13px;
+	pointer-events: none;
+}
+
+.icon-mail {
+	top: 18px;
+}
+
+.icon-cc {
+	top: 18px;
+}
+
+.icon-calendar {
+	top: 15px;
+}
+
+.icon-money {
+	top: 15px;
+	left: 16px;
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	color: $primary-green;
 }
 
 /*-------------------------*/
@@ -154,13 +203,12 @@ a.primary-nav-item-link:after {
 	display: none;
 }
 
-a.btn-primary {
+.btn-primary {
 	padding: 14px 18px 10px;
 	border: 1px solid #136231;
-	text-shadow: 0 1px rgba(0,0,0, .4);
-	text-decoration: none;
-	background-color: $primary-green;
 	color: #fff;
+	text-shadow: 0 1px rgba(0,0,0, .4);
+	background-color: $primary-green;
 	@include border-radius(3px);
 	@include box-shadow(0 2px 0 rgba(0,0,0, .13));
 
@@ -178,6 +226,12 @@ a.btn-primary {
 	}
 }
 
+a.btn-primary {
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #136231;
+}
+
 .primary-header .btn-primary {
 	margin-left: 40px;
 	position: relative;
@@ -185,29 +239,33 @@ a.btn-primary {
 	font-size: 15px;
 }
 
-a.btn-secondary {
-	padding: 11px 20px 7px;
-	border: 1px solid #8C7D71;
-	text-shadow: 0 1px rgba(0,0,0, .4);
-	text-decoration: none;
+.btn-secondary {
+	@extend .btn-primary;
+	padding: 11px 20px 6px;
+	border-color: #8C7D71;
 	font-size: 14px;
 	background-color: $secondary-brown;
-	color: #fff;
-	@include border-radius(3px);
-	@include box-shadow(0 2px 0 rgba(0,0,0, .13));
 
 	&:hover {
-		cursor: pointer;
-		border: 1px solid darken(#8C7D71, 2%);
+		border-color: darken(#8C7D71, 2%);
 		background-color: darken($secondary-brown, 4%);
-		@include box-shadow(0 1px 1px rgba(0,0,0, .23));
 	}
 
 	&:active {
-		border: 1px solid darken(#8C7D71, 5%);
-		background-color: darken(#A79D83, 8%);
-		@include box-shadow(0 1px 0 rgba(0,0,0, .13));
+		border-color: darken(#8C7D71, 5%);
+		background-color: darken($secondary-brown, 6%);
 	}
+}
+
+a.btn-secondary {
+	border-color: #8C7D71;
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn-submit:active,
+.btn-submit:focus {
+	outline: none;
 }
 
 .btn-view-more {
@@ -222,6 +280,7 @@ a.btn-secondary {
 
 .ck-profile-container {
 	margin: 50px 0 0 0;
+	border: 1px solid rgba(0,0,0, .15);
 	overflow: hidden;
 	background-color: #fff;
 	@include border-radius(3px);
@@ -340,6 +399,8 @@ a.btn-secondary {
 	background-color: rgba(0,0,0, .32);
 }
 
+/*-- Primary profile content --*/
+
 .ck-profile-primary-content {
 	max-width: 700px;
 	float: left;
@@ -393,4 +454,251 @@ a.ck-profile-get-well-inline-media {
 
 .btn-more-updates {
 	width: 175px;
+}
+
+.btn-ck-profile-get-well-add-photo {
+	margin-right: 28px;
+	position: relative;
+	font-size: 14px;
+	color: #947D7B;
+	border-bottom: none;
+
+	&:before {
+		content: "";
+		display: inline-block;
+		width: 19px;
+		height: 14px;
+		margin-right: 9px;
+		position: relative;
+		top: 1px;
+		background-image: url(/img/camera-icon.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.btn-ck-profile-get-well-add-video {
+	@extend .btn-ck-profile-get-well-add-photo;
+
+	&:before {
+		background-image: url(/img/camera-icon.svg);
+	}
+}
+
+.get-well-form-checkbox-container {
+	display: inline-block;
+	font-size: 14px;
+	color: #947D7B;
+}
+
+.get-well-form-checkbox {
+	font-size: 16px;
+	margin-right: 3x;
+}
+
+.get-well-btn-submit {
+	float: right;
+	position: relative;
+	bottom: 8px;
+}
+
+/*-- Secondary Profile Content --*/
+
+.ck-profile-secondary-content {
+	float: left;
+	max-width: 286px;
+	margin-left: 40px;
+
+	.ck-profile-section {
+		margin-bottom: 30px;
+
+		p {
+			margin-top: 0px;
+		}
+	}
+
+	.header-ck-profile-section {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	p, ul {
+		font-size: 13px;
+		line-height: 21px;
+		color: #777;
+	}
+}
+
+.ck-profile-donate-form-container {
+	margin: 40px 0;
+	padding-bottom: 40px;
+}
+
+.ck-profile-donate-form {
+	padding: 20px;
+	background-color: #f8f6f1;
+	border: 1px solid #E2DACC;
+	@include box-shadow(inset 0 0 0 4px rgba(#EFEBE3, .4));
+	@include border-radius(5px);
+
+	.header-ck-profile-section {
+		margin: 0px 0 3px;
+		text-shadow: 0 1px 0 #fff;
+	}
+
+	.link-form-more-info {
+		display: block;
+		max-width: 115px;
+		margin: 0 auto 25px;
+		font-size: 12px;
+	}
+	
+	input[type="text"]::-webkit-input-placeholder {
+	    color: #A29682;
+	}
+
+	input[type="text"]:-moz-placeholder {
+	    /* FF 4-18 */
+	    color: #A29682;
+	}
+
+	input[type="text"]::-moz-placeholder {
+	    /* FF 19+ */
+	    color: #A29682;
+	}
+
+	input[type="text"]:-ms-input-placeholder {
+	    /* IE 10+ */
+	    color: #A29682;
+	}
+}
+
+.ck-profile-donate-svg {
+	fill: $primary-green;
+}
+
+input.ck-profile-donate-input {
+	width: 100%;
+	margin-bottom: 10px;
+	padding-left: 38px;
+	border-color: #C8BEAC;
+	color: darken(#A29682, 15%);
+
+	&:focus {
+		border-color: #1CA350;
+		outline: none;
+		@include box-shadow(inset 0 2px 0 rgba(0,0,0, .08), 0 0 6px rgba(#3F9543, .6));
+	}
+}
+
+.input-wrap.half-width {
+	width: 47.9508197%;
+	float: left;
+
+	&:not(.last-half-width) {
+		margin-right: 04.0983607%;
+	}
+}
+
+.ck-profile-donate-form .btn-submit {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.link-aside-center {
+	position: relative;
+	top: 15px;
+	left: 33px;
+	margin-right: 12px;
+	font-size: 13px;
+}
+
+.ck-profile-funding-progress p {
+	text-align: center;
+}
+
+.funding-meter-base {
+	height: 30px;
+	width: 100%;
+	border: 1px solid #929292;
+	background-color: #D6D6D6;
+	@include border-radius(5px);
+}
+
+.funding-meter-fill {
+	width: 60%;
+	height: 30px;
+	position: relative;
+	right: 1px;
+	bottom: 1px;
+	background-color: $primary-green;
+	border: 1px solid #12592D;
+	@include border-radius(5px 0 0 5px);
+}
+
+.funding-meter-stats {
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	list-style-type: none;
+	color: #666;
+
+	li {
+		display: inline-block;
+		margin: 1px 14px 0 0;
+	}	
+}
+
+.funding-meter-stat-amount {
+	color: $primary-green;
+	font-weight: bold;
+}
+
+.link-ecfa-badge {
+	float: right;
+	width: 50px;
+	height: 50px;
+}
+
+.fa-graph {
+	position: relative;
+}
+
+.fa-graph-label {
+	display: block;
+	width: 50px;
+	position: absolute;
+	top: 37px;
+	left: 18px;
+	font-size: 7px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #999;
+}
+
+.fa-foot-note {
+	display: block;
+	width: 86px;
+	position: absolute;
+	bottom: -37px;
+	left: 0px;
+	font-size: 9px;
+	text-align: center;
+	color: #999;
+}
+
+.fa-color-label-container {
+	list-style-type: none;
+}
+
+.fa-graph-color-description {
+	
+	&:first-child:before {
+		content: "";
+		display: block;
+		width: 18px;
+		height: 18px;
+		background-color: $lime-green;
+	}
 }

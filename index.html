@@ -130,7 +130,7 @@
 
                 <div class="ck-profile-primary-content">
                     <section class="ck-profile-about ck-profile-section">
-                        <h3 class="ck-profile-section-title">About Kabirou</h3>
+                        <h3 class="header-ck-profile-section">About Kabirou</h3>
                         <p class="ck-profile-about-copy">
                             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
                             Aenean eu leo quam. Pellentesque ornare sem lacinia quam venen&hellip;
@@ -139,7 +139,7 @@
                     </section>
     
                     <section class="ck-profile-updates ck-profile-section">
-                        <h3 class="ck-profile-section-title">Updates</h3>
+                        <h3 class="header-ck-profile-section">Updates</h3>
                         <div class="ck-profile-update-container">
                             <span class="ck-profile-update-date">01/15/2014</span>
                             <p class="ck-profile-update-copy">
@@ -195,7 +195,7 @@
                     </section>
     
                     <section class="ck-profile-get-well ck-profile-section">
-                        <h3 class="ck-profile-section-title">Send a Get Well Message</h3>
+                        <h3 class="header-ck-profile-section">Send a Get Well Message</h3>
                         <p class="ck-profile-get-well-copy">
                             Cum sociis natoque penatibus et magnis dis parturient montes.
                             <a href="#">View get well messages</a>
@@ -209,32 +209,49 @@
                                 <input type="checkbox" class="get-well-form-checkbox">
                                 <span class="get-well-form-checkbox-label">Send Anonymously</span>
                             </div>
-                            <input type="submit" class="btn-submit" value="Send">
+                            <input type="submit" class="btn-submit btn-secondary get-well-btn-submit" value="Send Message">
                         </form>
                     </section>
                 </div>
 
                 <aside class="ck-profile-secondary-content">
-                    <section class="ck-profile-donate-form-container">
+                    <section class="ck-profile-donate-form-container ck-profile-section">
                         <form action="" class="ck-profile-donate-form">
-                            <h4 class="ck-profile-section-title">Help Kabirou</h4>
-                            <a href="#" class="lnk-form-more-info">What am I giving to?</a>
+                            <h4 class="header-ck-profile-section">Help Kabirou</h4>
+                            <a href="#" class="link-form-more-info">What am I giving to?</a>
                     
-                            <input type="text" class="ck-profile-donate-name" placeholder="Full Name">
-                            <input type="text" class="ck-profile-donate-email" placeholder="Email">
-                            <input type="text" class="ck-profile-donate-cc-num" placeholder="Card Number">
-                            <input type="text" class="ck-profile-donate-exp" placeholder="Exp. Date">
-                            <input type="text" class="ck-profile-donate-amount" placeholder="35">
+                            <div class="input-wrap">
+                                <img src="img/user-icon.svg" class="text-input-icon icon-user" alt="User icon">
+                                <input type="text" class="ck-profile-donate-name ck-profile-donate-input" placeholder="Full Name">
+                            </div>
+                            <div class="input-wrap">
+                                <img src="img/mail-icon.svg" class="text-input-icon icon-mail" alt="Mail icon">
+                                <input type="text" class="ck-profile-donate-email ck-profile-donate-input" placeholder="Email">
+                            </div>
+                            <div class="input-wrap">
+                                <img src="img/cc-icon.svg" class="text-input-icon icon-cc" alt="Credit card icon">
+                                <input type="text" class="ck-profile-donate-cc-num ck-profile-donate-input" placeholder="Card Number">
+                            </div>
+                            <div class="input-wrap half-width">
+                                <img src="img/calendar-icon.svg" class="text-input-icon icon-calendar" alt="Calendar icon">
+                                <input type="text" class="ck-profile-donate-exp ck-profile-donate-input" placeholder="Ex. Date">
+                            </div>
+                            <div class="input-wrap half-width last-half-width">
+                                <span class="text-input-icon icon-money">$</span>
+                                <input type="text" class="ck-profile-donate-amount ck-profile-donate-input" placeholder="35">
+                            </div>
 
-                            <input type="submit" class="btn-submit" value="Donate $35/Month">
+                            <input type="submit" class="btn-submit btn-primary" value="Donate $35/Month">
                         </form>
 
-                        <a href="#" class="lnk-aside-center">Want more options?</a>
-                        <a href="#" class="lnk-aside-center">What is this?</a>
+                        <a href="#" class="link-aside-center">Want more options?</a>
+                        <a href="#" class="link-aside-center">What is this?</a>
                     </section>
 
-                    <section class="ck-profile-funding-progress">
+                    <section class="ck-profile-funding-progress ck-profile-section">
                         <h4 class="header-ck-profile-section">Funding Progress</h4>
+
+                        <p>Kabirou needs three more supporters to complete the funding for his surgery:</p>
                         
                         <div class="funding-meter-container">
                             <div class="funding-meter-base">
@@ -247,15 +264,15 @@
                         </div>
                     </section>
 
-                    <section class="ck-profile-fa">
+                    <section class="ck-profile-fa ck-profile-section">
                         <h4 class="header-ck-profile-section">Financial Accountability</h4>
 
+                        <a href="#"><img src="img/ecfa-badge.png" alt="ECFA Badge" class="link-ecfa-badge"></a>
                         <p>
                         Practicing fiscal responsibility and accountability are critical aspects of CURE’s 
                         financial stewardship model. Along with completing annual audits by an independent 
                         CPA firm, CURE is a member in good standing with the ECFA.
                         </p>
-                        <a href="#"><img src="img/ecfa-badge.png" alt="ECFA Badge" class="lnk-ecfa-badge"></a>
                         <div class="fa-graph">
                             <img src="img/fa-pie-chart.svg" alt="Pie chart of CURE FY 2013 Expenses" class="fa-graph">
                             <span class="fa-graph-label">*FY 2013 Expenses</span>
@@ -277,7 +294,7 @@
 
                         <a href="#">Want to know more about CURE's finances?</a>
                     </section>
-                    <section class="ck-profile-testimonial">
+                    <section class="ck-profile-testimonial ck-profile-section">
                         <h4 class="header-ck-profile-section">Testimonial</h4>
                         <img src="img/testimonial-avatar.jpg" alt="Photo of testimonial author" class="testimonial-avatar">
                         <blockquote class="testomonial-body">
