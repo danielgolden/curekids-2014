@@ -448,6 +448,10 @@ a.ck-profile-get-well-inline-media {
 	}
 }
 
+.ck-profile-get-well {
+	border-bottom: none;
+}
+
 .get-well-media-poster {
 	height: 75px;
 }
@@ -511,6 +515,7 @@ a.ck-profile-get-well-inline-media {
 
 	.ck-profile-section {
 		margin-bottom: 30px;
+		padding-bottom: 30px;
 
 		p {
 			margin-top: 0px;
@@ -522,14 +527,18 @@ a.ck-profile-get-well-inline-media {
 		text-align: center;
 	}
 
-	p, ul {
+	p, ul, blockquote, cite {
 		font-size: 13px;
 		line-height: 21px;
 		color: #777;
 	}
+
+	a {
+		font-size: 13px;
+	}
 }
 
-.ck-profile-donate-form-container {
+.ck-profile-secondary-content .ck-profile-donate-form-container {
 	margin: 40px 0;
 	padding-bottom: 40px;
 }
@@ -637,6 +646,7 @@ input.ck-profile-donate-input {
 }
 
 .funding-meter-stats {
+	margin-bottom: 0px;
 	font-size: 13px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -689,16 +699,70 @@ input.ck-profile-donate-input {
 }
 
 .fa-color-label-container {
+	width: 210px;
+	margin: -94px 0 0 86px;
 	list-style-type: none;
 }
 
 .fa-graph-color-description {
-	
-	&:first-child:before {
+	margin-bottom: 8px;
+	position: relative;
+
+	&:before {
 		content: "";
 		display: block;
+		position: absolute;
+		top: 4px;
+		left: -25px;
 		width: 18px;
 		height: 18px;
-		background-color: $lime-green;
+	}
+	
+	&:first-child:before {
+		background-color: #8CC63F;
+	}
+
+	&:nth-child(2):before {
+		background-color: #D6DE23;
+	}
+
+	&:nth-child(3):before {
+		background-color: $primary-green;
+	}
+}
+
+.fa-color-label strong {
+	color: #362F2D;
+}
+
+.fa-color-label-description {
+	display: block;
+	font-size: 10px;
+	line-height: 13px;
+}
+
+.testimonial-avatar {
+	width: 55px;
+	height: 55px;
+	margin: 0 10px 5px 0;
+	float: left;
+	@include border-radius(3px);
+}
+
+.ck-profile-testimonial {
+	border-bottom: none;
+
+	blockquote.testimonial-body {
+		margin: 0;
+		font-style: italic;
+	}
+
+	cite {
+		margin-top: 10px;
+		float: right;
+
+		&:before {
+			content: "- ";
+		}
 	}
 }
