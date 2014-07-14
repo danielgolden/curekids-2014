@@ -80,6 +80,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/ecfa-badge.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49515,
+		"inputAbbreviatedPath": "\/img\/ecfa-badge.png",
+		"outputAbbreviatedPath": "\/img\/ecfa-badge.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/get-well-photo-placeholder.png": {
 		"fileType": 32768,
 		"ignore": 0,
