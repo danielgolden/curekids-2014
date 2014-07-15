@@ -615,7 +615,7 @@ a.primary-header-logo {
   position: relative;
   top: 28px;
   border-bottom: none;
-  background-image: url(/img/cure-logo.svg);
+  background-image: url(../img/cure-logo.svg);
   background-repeat: no-repeat;
   text-indent: 100%;
   white-space: nowrap;
@@ -865,7 +865,7 @@ a.btn-secondary {
     position: relative;
     left: 6px;
     top: 1px;
-    background-image: url(/img/follow-icon.svg); }
+    background-image: url(../img/follow-icon.svg); }
 
 /* line 452, ../sass/curekids.scss */
 .ck-profile-header-col-1 {
@@ -1162,13 +1162,13 @@ a.ck-profile-get-well-inline-media {
     margin-right: 9px;
     position: relative;
     top: 1px;
-    background-image: url(/img/camera-icon.svg);
+    background-image: url(../img/camera-icon.svg);
     background-repeat: no-repeat;
     background-position: center; }
 
 /* line 694, ../sass/curekids.scss */
 .btn-ck-profile-get-well-add-video:before {
-  background-image: url(/img/video-camera-icon.svg); }
+  background-image: url(../img/video-camera-icon.svg); }
 
 /* line 699, ../sass/curekids.scss */
 .get-well-form-checkbox-container {

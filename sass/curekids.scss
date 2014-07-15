@@ -219,7 +219,7 @@ a.primary-header-logo {
 	position: relative;
 	top: 28px;
 	border-bottom: none;
-	background-image: url(/img/cure-logo.svg);
+	background-image: url(../img/cure-logo.svg);
 	background-repeat: no-repeat;
 	text-indent: 100%;
 	white-space: nowrap;
@@ -445,7 +445,7 @@ a.btn-secondary {
 		position: relative;
 		left: 6px;
 		top: 1px;
-		background-image: url(/img/follow-icon.svg);
+		background-image: url(../img/follow-icon.svg);
 	}
 }
 
@@ -682,7 +682,7 @@ a.ck-profile-get-well-inline-media {
 		margin-right: 9px;
 		position: relative;
 		top: 1px;
-		background-image: url(/img/camera-icon.svg);
+		background-image: url(../img/camera-icon.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 	}
@@ -692,7 +692,7 @@ a.ck-profile-get-well-inline-media {
 	@extend .btn-ck-profile-get-well-add-photo;
 
 	&:before {
-		background-image: url(/img/video-camera-icon.svg);
+		background-image: url(../img/video-camera-icon.svg);
 	}
 }
 
