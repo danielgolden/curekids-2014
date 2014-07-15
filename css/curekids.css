@@ -1705,7 +1705,7 @@ input.ck-profile-donate-input {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    background-image: url("/img/footer-logo.svg"); }
+    background-image: url(../img/footer-logo.svg); }
 
 /* line 1222, ../sass/curekids.scss */
 .ecfa-badge {
@@ -1858,29 +1858,29 @@ a.social-media-link {
 
 /* line 1371, ../sass/curekids.scss */
 .facebook-link {
-  background-image: url("/img/social-media-icons.svg");
+  background-image: url(../img/social-media-icons.svg);
   background-size: 188px;
   background-position: -75px; }
 
 /* line 1377, ../sass/curekids.scss */
 .twitter-link {
-  background-image: url("/img/social-media-icons.svg");
+  background-image: url(../img/social-media-icons.svg);
   background-size: 188px;
   background-position: -112px; }
 
 /* line 1383, ../sass/curekids.scss */
 .youtube-link {
-  background-image: url("/img/social-media-icons.svg");
+  background-image: url(../img/social-media-icons.svg);
   background-size: 188px;
   background-position: -37px; }
 
 /* line 1389, ../sass/curekids.scss */
 a.app-store-link {
-  background-image: url("/img/social-media-icons.svg");
+  background-image: url(../img/social-media-icons.svg);
   background-size: 188px;
   background-position: -150px; }
 
 /* line 1395, ../sass/curekids.scss */
 .amazon-link {
-  background-image: url("/img/social-media-icons.svg");
+  background-image: url(../img/social-media-icons.svg);
   background-size: 188px; }
