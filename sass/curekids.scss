@@ -1,5 +1,6 @@
 @import "compass";
 @import "_normalize.scss";
+@import "_typography.scss";
 
 $primary-green: #198C45;
 $lime-green: #92d400;
@@ -14,7 +15,7 @@ $secondary-content-text-color: #847D7B;
 body {
 	margin: 0;
 	font-size: 16px;
-	font-family: 'Frutiger LT Std', sans-serif;
+	font-family: 'Frutiger', sans-serif;
 	background-color: #ede7dc;
 	@include filter-gradient(#ede7dc, #ffffff, vertical);
 	@include background-image(linear-gradient(top,  #ede7dc 0%,#ffffff 500px));
@@ -58,7 +59,7 @@ a {
 
 input[type="text"] {
 	height: 45px;
-	padding: 8px 13px 0;
+	padding: 3px 13px 0;
 	border: 1px solid #CEC9C0;
 	color: $primary-content-text-color;
 	@include border-radius(3px);
@@ -205,11 +206,28 @@ textarea {
 	border-bottom: 1px solid #c4b4a1;
 	background-color: #fff;
 	@include box-shadow(0 2px 0 rgba(#000, .06));
+
+	@media screen and (max-width: 1150px) {
+		height: 110px;	
+	}
+
+	@media screen and (max-width: 760px) {
+		height: 60px;	
+	}
 }
 
 .primary-header-contents {
 	max-width: 1080px;
 	margin: 0 auto;
+
+	@media screen and (max-width: 1150px) {
+		width: 90%;
+	}
+
+	@media screen and (max-width: 650px) {
+		width: 100%;
+		padding: 0 28px;
+	}
 }
 
 a.primary-header-logo {
@@ -224,10 +242,56 @@ a.primary-header-logo {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
+
+	@media screen and (max-width: 1150px) {
+		width: 175px;
+		height: 51px;
+	}
+
+	@media screen and (max-width: 760px) {
+		width: 120px;
+		top: 12px;
+	}
+}
+
+.menu-toggle {
+	display: none;
+	width: 54px;
+	float: right;
+	padding: 8px 12px 12px 12px;
+	position: relative;
+	bottom: 16px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	@include border-radius(3px);
+
+	.icon-bar {
+		display: block;
+		height: 3px;
+		width: 100%;
+		margin-top: 5px;
+		background-color: $primary-green;
+
+	}
+
+	@media screen and (max-width: 760px) {
+		display: block;
+	}
+
+	@media screen and (max-width: 760px) {
+		bottom: 43px;
+		left: 12px;
+	}
 }
 
 .primary-nav-container {
 	@include pie-clearfix();
+
+	@media screen and (max-width: 760px) {
+		height: 0px;
+		overflow: hidden;
+	}
 }
 
 .primary-nav {
@@ -235,6 +299,14 @@ a.primary-header-logo {
 	bottom: 34px;
 	float: right;
 	@include pie-clearfix();
+
+	@media screen and (max-width: 1150px) {
+		bottom: 27px;	
+	}
+
+	@media screen and (max-width: 950px) {
+		bottom: 21px;
+	}
 }
 
 .primary-nav-item {
@@ -252,16 +324,25 @@ a.primary-header-logo {
 	&:last-child {
 		margin-right: 0px;
 	}
+
+	@media screen and (max-width: 950px) {
+		font-size: 14px;
+		margin-right: 18px;
+	}
 }
 
 a.primary-nav-item-link:after {
 	display: block;
-	padding-top: 10px;
+	padding-top: 13px;
 	position: absolute;
 	left: 0;
 	top: 10px;
 	font-size: 12px;
-	color: #B3A092;
+	color: #C4B5AB;
+
+	@media screen and (max-width: 950px) {
+		display: none;
+	}
 }
 
 .curekids-primary-nav-item:after {
@@ -290,8 +371,15 @@ a.primary-nav-item-link:after {
 	display: none;
 }
 
+main {
+	@media screen and (max-width: 650px) {
+		width: 100%;
+		padding: 0 28px;
+	}
+}
+
 .btn-primary {
-	padding: 15px 18px 9px;
+	padding: 12px 18px 10px;
 	border: 1px solid #136231;
 	color: #fff;
 	text-shadow: 0 1px rgba(0,0,0, .4);
@@ -319,16 +407,23 @@ a.btn-primary {
 	border: 1px solid #136231;
 }
 
-.primary-header .btn-primary {
+.primary-header a.btn-primary {
 	margin-left: 40px;
 	position: relative;
-	top: 8px;
+	top: 7px;
 	font-size: 15px;
+
+	@media screen and (max-width: 950px) {
+		margin-left: 0px;
+		padding: 12px 15px 10px;
+		top: 0;
+		font-size: 14px;
+	}
 }
 
 .btn-secondary {
 	@extend .btn-primary;
-	padding: 11px 20px 6px;
+	padding: 9px 20px 7px;
 	border-color: #8C7D71;
 	font-size: 14px;
 	background-color: $secondary-brown;
@@ -368,11 +463,9 @@ a.btn-secondary {
 .ck-profile-container {
 	margin: 50px 0 100px 0;
 	position: relative;
-
 	border-width: 1px;
     border-style: solid;
     -webkit-border-image: -webkit-gradient(linear, 0 60%, 0 0, from(rgba(0,0,0,.0)), to(darken(#CEC8B9, 10%))) 1 90%;
-	
 	background-color: #fff;
 	@include box-shadow(0 -1px 0 #CEC8B9);
 	@include border-radius(3px);
@@ -406,35 +499,67 @@ a.btn-secondary {
 		-webkit-border-image: -webkit-gradient(linear, 0 40%, 0 0, from(rgba(0,0,0,.0)), to(#D5CEBC)) 1 100%;
 		@include border-radius(5px);
 	}
+
+	@media screen and (max-width: 1150px) {
+		width: 90%;
+		margin: 50px auto 100px;
+	}
+
+	@media screen and (max-width: 650px) {
+		width: 100%;
+	}
 }
 
 .ck-profile-header {
-	height: 100px;
 	position: relative;
-	@include pie-clearfix();
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: 60px;
+	}
 }
 
 .ck-profile-name {
 	float: left;
 	margin: 25px 0 0 40px;
 	font-size: 38px;
+
+	@media screen and (max-width: 1150px) {
+		margin: 15px 0 0 25px;
+		font-size: 32px;
+	}
+
+	@media screen and (max-width: 767px) {
+		float: none;
+		margin-left: 0px;
+		text-align: center;
+	}
 }
 
 .ck-profile-country {
 	clear: left;
 	float: left;
 	display: block;
-	margin: -4px 0 0 42px;
+	margin: -1px 0 0 42px;
 	font-size: 12px;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	color: #999;
+
+	@media screen and (max-width: 1150px) {
+		margin: -1px 0 0 25px;
+	}
+
+	@media screen and (max-width: 767px) {
+		float: none;
+		margin-left: 0px;
+		text-align: center;
+	}
 }
 
 .ck-profile-container .btn-ck-follow {
 	padding: 11px 18px 7px 14px;
 	position: absolute;
-	left: -90px;
+	left: -123px;
 	top: 31px;
 
 	&:after {
@@ -444,14 +569,28 @@ a.btn-secondary {
 		height: 13px;
 		position: relative;
 		left: 6px;
-		top: 1px;
+		top: -1px;
 		background-image: url(../img/follow-icon.svg);
+	}
+
+	@media screen and (max-width: 1150px) {
+		top: 22px;
+	}
+
+	@media screen and (max-width: 850px) {
+		font-size: 16px;
 	}
 }
 
 .ck-profile-header-col-1 {
 	float: left;
 	@include pie-clearfix();
+
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		float: none;
+		margin-bottom: 15px;
+	}
 }
 
 .ck-profile-header-col-2 {
@@ -459,11 +598,27 @@ a.btn-secondary {
 	margin: 0;
 	position: relative;
 	float: right;
+
+	@media screen and (max-width: 1150px) {
+		height: 80px;
+	}
+
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		height: inherit;
+		position: absolute;
+		bottom: -65px;
+	}
 }
 
 .ck-profile-info {
 	margin: 0;
+	padding-left: 0;
 	@include pie-clearfix();
+
+	@media screen and (max-width: 767px) {
+		border-bottom: 1px solid rgba(0,0,0, .1);
+	}
 }
 
 .ck-profile-info-item {
@@ -475,27 +630,67 @@ a.btn-secondary {
 	font-size: 20px;
 	list-style-type: none;
 	color: #362F2D;
+
+	@media screen and (max-width: 1150px) {
+		font-size: 16px;
+		height: 80px;
+	}
+
+	@media screen and (max-width: 920px) {
+		&:last-child {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		width: 33.3333333333333333%;
+		height: 73px;
+		position: relative;
+		text-align: center;
+
+		&:first-child {
+			border-left: none;
+		}
+
+		&:last-child {
+			display: block;
+		}
+	}
+}
+
+.ck-profile-info-item-age:after {
+	content: " Years Old";
 }
 
 .ck-profile-info-item-label { 
 	display: block;
-	margin: 33px 0 6px 0;
+	margin: 32px 0 4px 0;
 	color: #999;
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+
+	@media screen and (max-width: 1150px) {
+		margin-top: 25px;
+		font-size: 10px;
+	}
 }
 
 .ck-profile-photos-container {
-	height: 548px;
+	max-height: 548px;
 	position: relative;
 	overflow: hidden;
+	clear: both;
 	@include pie-clearfix();
 }
 
 .ck-profile-primary-photo {
 	width: 81.39%;
 	float: left;
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+	}
 }
 
 .ck-profile-secondary-photo-container {
@@ -503,14 +698,22 @@ a.btn-secondary {
 	max-height: 274px;
 	position: relative;
 	float: left;
+
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
 }
 
 .ck-profile-secondary-photo {
 	width: 100%;
+
+	@media screen and (max-width: 1150px) {
+		margin-bottom: -4px;
+	}
 }
 
 .ck-profile-secondary-photo-caption {
-	padding: 10px 10px 3px;
+	padding: 10px 10px 6px;
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
@@ -608,6 +811,10 @@ div[data-liffect="bounceInUp"].play .ck-profile-photo-thumb {
 	max-width: 700px;
 	float: left;
 	padding-left: 40px;
+
+	@media screen and (max-width: 1150px) {
+		width: 60%	
+	}
 }
 
 .ck-profile-section {
@@ -751,6 +958,10 @@ a.ck-profile-get-well-inline-media {
 
 	.alert {
 		margin: 20px 0 0 0;
+	}
+
+	@media screen and (max-width: 1150px) {
+		width: 30%;	
 	}
 }
 
@@ -1055,7 +1266,7 @@ input.ck-profile-donate-input {
 	&:before {
 	    content: "";
 	    display: block;
-	    width: 360px;
+	    width: 100%;
 	    height: 1px;
 	    position: absolute;
 	    left: 100%;
@@ -1066,7 +1277,7 @@ input.ck-profile-donate-input {
 	&:after {
 	    content: "";
 	    display: block;
-	    width: 360px;
+	    width: 100%;
 	    height: 1px;
 	    position: absolute;
 	    right: 100%;
@@ -1076,6 +1287,7 @@ input.ck-profile-donate-input {
 }
 
 .other-kids-container {
+	overflow: hidden;
 	@include pie-clearfix();
 }
 
@@ -1343,7 +1555,7 @@ a.footer-link {
 
 .social-media-links {
 	position: absolute;
-	right: -5px;
+	right: 0px;
 	top: 5px;
 }
 
