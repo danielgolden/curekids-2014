@@ -24,6 +24,11 @@ body {
 		background-color: saturate(#e3dcd1, 10%);
 		@include filter-gradient(saturate(#e3dcd1, 10%), #ffffff, vertical);
 		@include background-image(linear-gradient(top,  saturate(#e3dcd1, 10%) 0%,#ffffff 900px));
+
+		@media screen and (max-width: 650px) {
+			background-color: #fff;
+			background-image: none;
+		}
 	}
 }
 
@@ -48,6 +53,11 @@ h4 {
 p {
 	line-height: 27px;
 	color: $primary-content-text-color;
+
+	@media screen and (max-width: 480px) {
+		line-height: 25px;
+	}
+
 }
 
 a {
@@ -57,7 +67,8 @@ a {
 	border-bottom: 1px dotted $primary-green;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
 	height: 45px;
 	padding: 3px 13px 0;
 	border: 1px solid #CEC9C0;
@@ -214,6 +225,11 @@ textarea {
 	@media screen and (max-width: 760px) {
 		height: 60px;	
 	}
+
+	@media screen and (max-width: 650px) {
+		border: none;
+		@include box-shadow(none);
+	}
 }
 
 .primary-header-contents {
@@ -263,7 +279,7 @@ a.primary-header-logo {
 	bottom: 16px;
 	border: none;
 	outline: none;
-	background-color: transparent;
+	background-color: rgba(0,0,0, 0);
 	@include border-radius(3px);
 
 	.icon-bar {
@@ -280,7 +296,7 @@ a.primary-header-logo {
 	}
 
 	@media screen and (max-width: 760px) {
-		bottom: 43px;
+		margin-top: -26px;
 		left: 12px;
 	}
 }
@@ -374,7 +390,6 @@ a.primary-nav-item-link:after {
 main {
 	@media screen and (max-width: 650px) {
 		width: 100%;
-		padding: 0 28px;
 	}
 }
 
@@ -418,6 +433,18 @@ a.btn-primary {
 		padding: 12px 15px 10px;
 		top: 0;
 		font-size: 14px;
+	}
+}
+
+.btn-primary-mobile {
+	display: none; 
+	margin: 25px 0 10px;
+	padding: 15px 15px 13px;
+	font-size: 18px;
+	text-align: center;
+
+	@media screen and (max-width: 767px) {
+		display: block;
 	}
 }
 
@@ -494,8 +521,8 @@ a.btn-secondary {
 		bottom: -6px;
 		border-width: 1px 1px 0 1px;
 		border-style: solid;
-		@include filter-gradient(#e1dcd1, transparent, vertical);
-		@include background-image(linear-gradient(top,  #e1dcd1 10%,transparent 47%));		
+		@include filter-gradient(#e1dcd1, rgba(0,0,0, 0), vertical);
+		@include background-image(linear-gradient(top,  #e1dcd1 10%,rgba(0,0,0, 0) 47%));		
 		-webkit-border-image: -webkit-gradient(linear, 0 40%, 0 0, from(rgba(0,0,0,.0)), to(#D5CEBC)) 1 100%;
 		@include border-radius(5px);
 	}
@@ -507,6 +534,19 @@ a.btn-secondary {
 
 	@media screen and (max-width: 650px) {
 		width: 100%;
+		margin-top: 0px;
+		border: none;
+		@include box-shadow(none);
+		background-color: transparent;
+
+		&:before,
+		&:after {
+			display: none;
+			border: none;
+			@include box-shadow(none);
+			background-color: transparent;
+			background-image: none;
+		}
 	}
 }
 
@@ -516,6 +556,7 @@ a.btn-secondary {
 	@media screen and (max-width: 767px) {
 		margin-bottom: 60px;
 	}
+
 }
 
 .ck-profile-name {
@@ -530,8 +571,11 @@ a.btn-secondary {
 
 	@media screen and (max-width: 767px) {
 		float: none;
-		margin-left: 0px;
-		text-align: center;
+		margin: 10px 0 0 0;
+		padding-left: 28px;
+		clear: both;
+		font-size: 36px;
+		text-align: left;
 	}
 }
 
@@ -552,11 +596,12 @@ a.btn-secondary {
 	@media screen and (max-width: 767px) {
 		float: none;
 		margin-left: 0px;
-		text-align: center;
+		padding-left: 28px;
+		text-align: left;
 	}
 }
 
-.ck-profile-container .btn-ck-follow {
+.btn-ck-follow {
 	padding: 11px 18px 7px 14px;
 	position: absolute;
 	left: -123px;
@@ -582,6 +627,26 @@ a.btn-secondary {
 	}
 }
 
+.btn-ck-follow-mobile {
+	display: none;
+
+	@media screen and (max-width: 767px) {
+		display: block;
+		right: 28px;
+		top: 11px;
+		left: inherit;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding: 11px 14px 9px 14px;
+		font-size: 14px;
+
+		&:after {
+			display: none;
+		}
+	}
+}
+
 .ck-profile-header-col-1 {
 	float: left;
 	@include pie-clearfix();
@@ -589,7 +654,11 @@ a.btn-secondary {
 	@media screen and (max-width: 767px) {
 		width: 100%;
 		float: none;
-		margin-bottom: 15px;
+		margin: 15px 0 20px;
+
+		&:after {
+			display: none;
+		}
 	}
 }
 
@@ -608,6 +677,10 @@ a.btn-secondary {
 		height: inherit;
 		position: absolute;
 		bottom: -65px;
+
+		.btn-ck-follow {
+			display: none;
+		}
 	}
 }
 
@@ -656,10 +729,37 @@ a.btn-secondary {
 			display: block;
 		}
 	}
+
+	@media screen and (max-width: 650px) {
+		width: 40%;
+		height: 70px;
+	}
+
+	@media screen and (max-width: 480px) {
+		width: 65%;
+
+		&:last-child {
+			display: none;
+		}
+	}
 }
 
-.ck-profile-info-item-age:after {
-	content: " Years Old";
+.ck-profile-info-item-age {
+	&:after {
+		content: " Years Old";
+
+		@media screen and (max-width: 650px) {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 650px) {
+		width: 20%;
+	}
+
+	@media screen and (max-width: 480px) {
+		width: 35%;
+	}
 }
 
 .ck-profile-info-item-label { 
@@ -673,6 +773,10 @@ a.btn-secondary {
 	@media screen and (max-width: 1150px) {
 		margin-top: 25px;
 		font-size: 10px;
+	}
+
+	@media screen and (max-width: 650px) {
+		margin: 24px 0 1px;
 	}
 }
 
@@ -813,7 +917,13 @@ div[data-liffect="bounceInUp"].play .ck-profile-photo-thumb {
 	padding-left: 40px;
 
 	@media screen and (max-width: 1150px) {
-		width: 60%	
+		width: 60%;	
+	}
+
+	@media screen and (max-width: 850px) {
+		width: 100%;
+		padding: 0 28px;
+		max-width: inherit;	
 	}
 }
 
@@ -963,6 +1073,17 @@ a.ck-profile-get-well-inline-media {
 	@media screen and (max-width: 1150px) {
 		width: 30%;	
 	}
+
+	@media screen and (max-width: 850px) {
+		width: 100%;
+		margin: 0px;
+		padding: 0 28px;
+		max-width: inherit;	
+	}
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 
 .ck-profile-secondary-content .ck-profile-donate-form-container {
@@ -989,20 +1110,24 @@ a.ck-profile-get-well-inline-media {
 		font-size: 12px;
 	}
 	
+	input[type="text"]::-webkit-input-placeholder,
 	input[type="text"]::-webkit-input-placeholder {
 	    color: #A29682;
 	}
 
+	input[type="text"]:-moz-placeholder,
 	input[type="text"]:-moz-placeholder {
 	    /* FF 4-18 */
 	    color: #A29682;
 	}
 
+	input[type="text"]::-moz-placeholder,
 	input[type="text"]::-moz-placeholder {
 	    /* FF 19+ */
 	    color: #A29682;
 	}
 
+	input[type="text"]:-ms-input-placeholder,
 	input[type="text"]:-ms-input-placeholder {
 	    /* IE 10+ */
 	    color: #A29682;
@@ -1284,11 +1409,19 @@ input.ck-profile-donate-input {
 	    margin: -20px 20px 0 0;
 	    background-color: rgba(0,0,0, .1);
 	}
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 
 .other-kids-container {
 	overflow: hidden;
 	@include pie-clearfix();
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 
 .other-kid-container {
