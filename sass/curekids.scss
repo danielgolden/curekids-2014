@@ -497,7 +497,7 @@ a.btn-primary {
 	font-size: 18px;
 	text-align: center;
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 850px) {
 		display: block;
 	}
 }
@@ -575,9 +575,9 @@ a.btn-secondary {
 		bottom: -6px;
 		border-width: 1px 1px 0 1px;
 		border-style: solid;
+		-webkit-border-image: -webkit-gradient(linear, 0 40%, 0 0, from(rgba(#e1dcd1, .0)), to(#D5CEBC)) 1 100%;
 		@include filter-gradient(#e1dcd1, rgba(0,0,0, 0), vertical);
-		@include background-image(linear-gradient(top,  #e1dcd1 10%,rgba(0,0,0, 0) 47%));		
-		-webkit-border-image: -webkit-gradient(linear, 0 40%, 0 0, from(rgba(0,0,0,.0)), to(#D5CEBC)) 1 100%;
+		@include background-image(linear-gradient(top,  #e1dcd1 10%, rgba(#e1dcd1, .0) 47%));		
 		@include border-radius(5px);
 	}
 
@@ -843,7 +843,7 @@ a.btn-secondary {
 }
 
 .ck-profile-primary-photo {
-	width: 81.39%;
+	width: 81.3543599%;
 	float: left;
 
 	@media screen and (max-width: 600px) {
@@ -852,7 +852,7 @@ a.btn-secondary {
 }
 
 .ck-profile-secondary-photo-container {
-	width: 18.6111111%;
+	width: 18.6456401%;
 	max-height: 274px;
 	position: relative;
 	float: left;
@@ -1129,15 +1129,16 @@ a.ck-profile-get-well-inline-media {
 	}
 
 	@media screen and (max-width: 850px) {
-		width: 100%;
-		margin: 0px;
-		padding: 0 28px;
-		max-width: inherit;	
+		display: none;
+		
+		// If this element is not going to be hidden at this point, then these styles may be helpful to apply
+		//
+		// width: 100%;
+		// margin: 0px;
+		// padding: 0 28px;
+		// max-width: inherit;	
 	}
 
-	@media screen and (max-width: 767px) {
-		display: none;
-	}
 }
 
 .ck-profile-secondary-content .ck-profile-donate-form-container {
