@@ -438,55 +438,55 @@ th {
 @font-face {
   font-family: "Frutiger";
   src: url('../fonts/frutiger-light.eot?1405540396');
-  src: url('../fonts/frutiger-light.eot?&1405540396#iefix') format("embedded-opentype"), url('/fonts/frutiger-light.woff?1405540396') format("woff"), url('/fonts/frutiger-light.ttf?1405540396') format("truetype"), url('/fonts/frutiger-light.svg?1405540396#Frutiger') format("svg");
+  src: url('../fonts/frutiger-light.eot?&1405540396#iefix') format("embedded-opentype"), url('../fonts/frutiger-light.woff?1405540396') format("woff"), url('../fonts/frutiger-light.ttf?1405540396') format("truetype"), url('../fonts/frutiger-light.svg?1405540396#Frutiger') format("svg");
   font-weight: 100;
   font-style: normal; }
 @font-face {
   font-family: "Frutiger";
   src: url('../fonts/frutiger-light-italic.eot?1405540396');
-  src: url('../fonts/frutiger-light-italic.eot?&1405540396#iefix') format("embedded-opentype"), url('/fonts/frutiger-light-italic.woff?1405540396') format("woff"), url('/fonts/frutiger-light-italic.ttf?1405540396') format("truetype"), url('/fonts/frutiger-light-italic.svg?1405540396#Frutiger') format("svg");
+  src: url('../fonts/frutiger-light-italic.eot?&1405540396#iefix') format("embedded-opentype"), url('../fonts/frutiger-light-italic.woff?1405540396') format("woff"), url('../fonts/frutiger-light-italic.ttf?1405540396') format("truetype"), url('../fonts/frutiger-light-italic.svg?1405540396#Frutiger') format("svg");
   font-weight: 100;
   font-style: italic; }
 @font-face {
   font-family: "Frutiger";
   src: url('../fonts/frutiger-roman.eot?1405540396');
-  src: url('../fonts/frutiger-roman.eot?&1405540396#iefix') format("embedded-opentype"), url('/fonts/frutiger-roman.woff?1405540396') format("woff"), url('/fonts/frutiger-roman.ttf?1405540396') format("truetype"), url('/fonts/frutiger-roman.svg?1405540396#Frutiger') format("svg");
+  src: url('../fonts/frutiger-roman.eot?&1405540396#iefix') format("embedded-opentype"), url('../fonts/frutiger-roman.woff?1405540396') format("woff"), url('../fonts/frutiger-roman.ttf?1405540396') format("truetype"), url('../fonts/frutiger-roman.svg?1405540396#Frutiger') format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "Frutiger";
   src: url('../fonts/frutiger-italic.eot?1405540396');
-  src: url('../fonts/frutiger-italic.eot?&1405540396#iefix') format("embedded-opentype"), url('/fonts/frutiger-italic.woff?1405540396') format("woff"), url('/fonts/frutiger-italic.ttf?1405540396') format("truetype"), url('/fonts/frutiger-italic.svg?1405540396#Frutiger') format("svg");
+  src: url('../fonts/frutiger-italic.eot?&1405540396#iefix') format("embedded-opentype"), url('../fonts/frutiger-italic.woff?1405540396') format("woff"), url('../fonts/frutiger-italic.ttf?1405540396') format("truetype"), url('../fonts/frutiger-italic.svg?1405540396#Frutiger') format("svg");
   font-weight: normal;
   font-style: italic; }
 @font-face {
   font-family: "Frutiger";
   src: url('../fonts/frutiger-bold.eot?1405540396');
-  src: url('../fonts/frutiger-bold.eot?&1405540396#iefix') format("embedded-opentype"), url('/fonts/frutiger-bold.woff?1405540396') format("woff"), url('/fonts/frutiger-bold.ttf?1405540396') format("truetype"), url('/fonts/frutiger-bold.svg?1405540396#Frutiger') format("svg");
+  src: url('../fonts/frutiger-bold.eot?&1405540396#iefix') format("embedded-opentype"), url('../fonts/frutiger-bold.woff?1405540396') format("woff"), url('../fonts/frutiger-bold.ttf?1405540396') format("truetype"), url('../fonts/frutiger-bold.svg?1405540396#Frutiger') format("svg");
   font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: "Frutiger";
   src: url('../fonts/frutiger-bold-italic.eot?1405540396');
-  src: url('../fonts/frutiger-bold-italic.eot?&1405540396#iefix') format("embedded-opentype"), url('/fonts/frutiger-bold-italic.woff?1405540396') format("woff"), url('/fonts/frutiger-bold-italic.ttf?1405540396') format("truetype"), url('/fonts/frutiger-bold-italic.svg?1405540396#Frutiger') format("svg");
+  src: url('../fonts/frutiger-bold-italic.eot?&1405540396#iefix') format("embedded-opentype"), url('../fonts/frutiger-bold-italic.woff?1405540396') format("woff"), url('../fonts/frutiger-bold-italic.ttf?1405540396') format("truetype"), url('../fonts/frutiger-bold-italic.svg?1405540396#Frutiger') format("svg");
   font-weight: bold;
   font-style: italic; }
 @font-face {
   font-family: "Frutiger";
   src: url('../fonts/frutiger-black.eot?1405540396');
-  src: url('../fonts/frutiger-black.eot?&1405540396#iefix') format("embedded-opentype"), url('/fonts/frutiger-black.woff?1405540396') format("woff"), url('/fonts/frutiger-black.ttf?1405540396') format("truetype"), url('/fonts/frutiger-black.svg?1405540396#Frutiger') format("svg");
+  src: url('../fonts/frutiger-black.eot?&1405540396#iefix') format("embedded-opentype"), url('../fonts/frutiger-black.woff?1405540396') format("woff"), url('../fonts/frutiger-black.ttf?1405540396') format("truetype"), url('../fonts/frutiger-black.svg?1405540396#Frutiger') format("svg");
   font-weight: 600;
   font-style: normal; }
 @font-face {
   font-family: "Frutiger";
   src: url('../fonts/frutiger-black-italic.eot?1405540396');
-  src: url('../fonts/frutiger-black-italic.eot?&1405540396#iefix') format("embedded-opentype"), url('/fonts/frutiger-black-italic.woff?1405540396') format("woff"), url('/fonts/frutiger-black-italic.ttf?1405540396') format("truetype"), url('/fonts/frutiger-black-italic.svg?1405540396#Frutiger') format("svg");
+  src: url('../fonts/frutiger-black-italic.eot?&1405540396#iefix') format("embedded-opentype"), url('../fonts/frutiger-black-italic.woff?1405540396') format("woff"), url('../fonts/frutiger-black-italic.ttf?1405540396') format("truetype"), url('../fonts/frutiger-black-italic.svg?1405540396#Frutiger') format("svg");
   font-weight: 600;
   font-style: italic; }
 @font-face {
   font-family: "Frutiger";
   src: url('../fonts/frutiger-ultra-black.eot?1405540396');
-  src: url('../fonts/frutiger-ultra-black.eot?&1405540396#iefix') format("embedded-opentype"), url('/fonts/frutiger-ultra-black.woff?1405540396') format("woff"), url('/fonts/frutiger-ultra-black.ttf?1405540396') format("truetype"), url('/fonts/frutiger-ultra-black.svg?1405540396#Frutiger') format("svg");
+  src: url('../fonts/frutiger-ultra-black.eot?&1405540396#iefix') format("embedded-opentype"), url('../fonts/frutiger-ultra-black.woff?1405540396') format("woff"), url('../fonts/frutiger-ultra-black.ttf?1405540396') format("truetype"), url('../fonts/frutiger-ultra-black.svg?1405540396#Frutiger') format("svg");
   font-weight: 800;
   font-style: normal; }
 /* line 11, ../sass/curekids.scss */
