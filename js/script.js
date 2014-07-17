@@ -8,4 +8,12 @@ $(function() {
 	        $("div[data-liffect]").addClass("play");
 	    }
 	});
+
+	$('.menu-toggle').click(function() {
+		if($('.primary-header').hasClass('mobile-nav-active')) {
+			$('.primary-header').removeClass('mobile-nav-active');
+		} else {
+			$('.primary-header').addClass('mobile-nav-active');
+		}
+	});
 });
