@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="33px" height="32px" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>Zoom Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.58919837 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.58919837 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Static" sketch:type="MSArtboardGroup" transform="translate(-814.000000, -1560.000000)" fill="#FFFFFF">
+            <g id="//-Body" sketch:type="MSLayerGroup" transform="translate(169.000000, 179.000000)">
+                <g id="::-Aside-+-::-Primary" transform="translate(0.000000, 683.000000)" sketch:type="MSShapeGroup">
+                    <g id="::-Primary" transform="translate(0.000000, 1.000000)">
+                        <g id="Updates" transform="translate(22.000000, 146.000000)">
+                            <g id="Status-4" transform="translate(30.385081, 490.000000)">
+                                <g id="Photo-Thumb-2" transform="translate(571.000000, 38.000000)">
+                                    <g id="Zoom-Icon" transform="translate(25.000000, 25.000000)">
+                                        <path d="M10.8041667,7.89509468 C9.17048611,7.89791499 7.84340278,9.24672643 7.840625,10.905419 C7.84340278,12.5627015 9.17048611,13.9111604 10.8041667,13.9143332 C12.4364583,13.9111604 13.7649306,12.5627015 13.7677083,10.905419 C13.7649306,9.24672643 12.4364583,7.89791499 10.8041667,7.89509468" id="Fill-1" filter="url(#filter-1)"></path>
+                                        <path d="M12.5,-0.0789685737 C5.59652778,-0.0789685737 0,5.60324335 0,12.6124093 C0,19.6219279 5.59652778,25.3037873 12.5,25.3037873 C19.4034722,25.3037873 25,19.6219279 25,12.6124093 C25,5.60324335 19.4034722,-0.0789685737 12.5,-0.0789685737 L12.5,-0.0789685737 Z M19.1034722,19.3236805 C18.8809028,19.5482474 18.584375,19.6578868 18.2923611,19.6578868 L18.2881944,19.6578868 C17.9538194,19.6578868 17.6184028,19.5207494 17.3611111,19.2605761 L13.6315972,15.4729049 C12.8125,15.9964243 11.8420139,16.2999597 10.8041667,16.2999597 C7.86944444,16.2999597 5.48958333,13.88472 5.48958333,10.905419 C5.48958333,7.9247079 7.86944444,5.50805802 10.8041667,5.50805802 C13.7388889,5.50805802 16.1177083,7.9247079 16.11875,10.905419 C16.11875,11.9531628 15.8222222,12.9346293 15.3111111,13.7616841 L19.0447917,17.5521757 C19.3,17.8127015 19.4347222,18.1539585 19.4347222,18.4934529 C19.4357639,18.7917002 19.3288194,19.0941781 19.1034722,19.3236805 L19.1034722,19.3236805 Z" id="Fill-2" filter="url(#filter-2)"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -875,6 +875,7 @@ a.btn-secondary {
 .ck-profile-primary-photo {
 	width: 81.3543599%;
 	float: left;
+	cursor: pointer;
 
 	@media screen and (max-width: 600px) {
 		width: 100%;
@@ -894,7 +895,8 @@ a.btn-secondary {
 
 .ck-profile-secondary-photo {
 	width: 100%;
-
+	cursor: pointer;
+	
 	@media screen and (max-width: 1150px) {
 		margin-bottom: -4px;
 	}
@@ -1053,6 +1055,38 @@ a.ck-profile-get-well-inline-media {
 		position: absolute;
 		top: 23px;
 		left: 23px;		
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: rgba(0,0,0, .75);
+		background-size: 25px 25px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		@include border-radius(5px);
+		@include transition(.075s all ease-in-out);
+	}
+
+	&.ck-profile-get-well-inline-photo:before {
+		background-image: url(/img/zoom-icon.svg);
+	}
+
+	&.ck-profile-get-well-inline-video:before {
+		background-image: url(/img/play-icon.svg);
+		background-size: 23px 23px;
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
 	}
 }
 
