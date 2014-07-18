@@ -1621,6 +1621,7 @@ input.ck-profile-donate-input {
 	float: left;
 	position: relative;
 	overflow: hidden;
+	border-bottom: none;
 	@include border-radius(5px);
 
 	&:last-child {
