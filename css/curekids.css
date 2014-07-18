@@ -511,9 +511,9 @@ body {
     background-color: #e7ddcd;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE7DDCD', endColorstr='#FFFFFFFF');
-    background-image: -moz-linear-gradient(top, #e7ddcd 0%, #ffffff 900px);
-    background-image: -webkit-linear-gradient(top, #e7ddcd 0%, #ffffff 900px);
-    background-image: linear-gradient(to bottom, #e7ddcd 0%, #ffffff 900px); }
+    background-image: -moz-linear-gradient(top, #e7ddcd 0%, #ffffff 1500px);
+    background-image: -webkit-linear-gradient(top, #e7ddcd 0%, #ffffff 1500px);
+    background-image: linear-gradient(to bottom, #e7ddcd 0%, #ffffff 1500px); }
     @media screen and (max-width: 650px) {
       /* line 23, ../sass/curekids.scss */
       body.no-ck-bar {
@@ -1077,12 +1077,12 @@ a.btn-secondary {
     bottom: -6px;
     border-width: 1px 1px 0 1px;
     border-style: solid;
-    -webkit-border-image: -webkit-gradient(linear, 0 40%, 0 0, from(rgba(225, 220, 209, 0)), to(#d5cebc)) 1 100%;
+    -webkit-border-image: -webkit-gradient(linear, 0 40%, 0 0, from(rgba(225, 220, 209, 0)), to(#dbd5c5)) 1 100%;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE1DCD1', endColorstr='#00000000');
-    background-image: -moz-linear-gradient(top, #e1dcd1 10%, rgba(225, 220, 209, 0) 47%);
-    background-image: -webkit-linear-gradient(top, #e1dcd1 10%, rgba(225, 220, 209, 0) 47%);
-    background-image: linear-gradient(to bottom, #e1dcd1 10%, rgba(225, 220, 209, 0) 47%);
+    background-image: -moz-linear-gradient(top, #e3ded4 10%, rgba(225, 220, 209, 0) 900px);
+    background-image: -webkit-linear-gradient(top, #e3ded4 10%, rgba(225, 220, 209, 0) 900px);
+    background-image: linear-gradient(to bottom, #e3ded4 10%, rgba(225, 220, 209, 0) 900px);
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px; }

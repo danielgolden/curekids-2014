@@ -23,7 +23,7 @@ body {
 	&.no-ck-bar {
 		background-color: saturate(#e3dcd1, 10%);
 		@include filter-gradient(saturate(#e3dcd1, 10%), #ffffff, vertical);
-		@include background-image(linear-gradient(top,  saturate(#e3dcd1, 10%) 0%,#ffffff 900px));
+		@include background-image(linear-gradient(top,  saturate(#e3dcd1, 10%) 0%,#ffffff 1500px));
 
 		@media screen and (max-width: 650px) {
 			background-color: #fff;
@@ -580,9 +580,9 @@ a.btn-secondary {
 		bottom: -6px;
 		border-width: 1px 1px 0 1px;
 		border-style: solid;
-		-webkit-border-image: -webkit-gradient(linear, 0 40%, 0 0, from(rgba(#e1dcd1, .0)), to(#D5CEBC)) 1 100%;
+		-webkit-border-image: -webkit-gradient(linear, 0 40%, 0 0, from(rgba(#e1dcd1, .0)), to(lighten(#D5CEBC, 3%))) 1 100%;
 		@include filter-gradient(#e1dcd1, rgba(0,0,0, 0), vertical);
-		@include background-image(linear-gradient(top,  #e1dcd1 10%, rgba(#e1dcd1, .0) 47%));		
+		@include background-image(linear-gradient(top,  lighten(#e1dcd1, 1%) 10%, rgba(#e1dcd1, .0) 900px));		
 		@include border-radius(5px);
 	}
 
