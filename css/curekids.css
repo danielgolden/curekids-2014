@@ -1164,7 +1164,7 @@ a.btn-secondary {
 
 /* line 664, ../sass/curekids.scss */
 .btn-ck-follow {
-  padding: 11px 18px 7px 14px;
+  padding: 9px 18px 7px 15px;
   position: absolute;
   left: -123px;
   top: 31px; }
@@ -1176,7 +1176,7 @@ a.btn-secondary {
     height: 13px;
     position: relative;
     left: 6px;
-    top: -1px;
+    top: 1px;
     background-image: url(../img/follow-icon.svg); }
   @media screen and (max-width: 1150px) {
     /* line 664, ../sass/curekids.scss */
