@@ -1009,19 +1009,24 @@ a.btn-primary, a.btn-secondary {
   .btn-secondary:active {
     border-color: #7e7066;
     background-color: #9a8f71; }
+  @media screen and (max-width: 650px) {
+    /* line 505, ../sass/curekids.scss */
+    .btn-secondary {
+      padding: 12px 23px 10px;
+      font-size: 16px; } }
 
-/* line 523, ../sass/curekids.scss */
+/* line 528, ../sass/curekids.scss */
 a.btn-secondary {
   border-color: #8C7D71;
   text-decoration: none;
   color: #fff; }
 
-/* line 529, ../sass/curekids.scss */
+/* line 534, ../sass/curekids.scss */
 .btn-submit:active,
 .btn-submit:focus {
   outline: none; }
 
-/* line 534, ../sass/curekids.scss */
+/* line 539, ../sass/curekids.scss */
 .btn-view-more {
   display: block;
   margin: 35px auto 25px;
@@ -1030,7 +1035,7 @@ a.btn-secondary {
 /*-------------------------*/
 /*------- CK Profile ------*/
 /*-------------------------*/
-/* line 544, ../sass/curekids.scss */
+/* line 549, ../sass/curekids.scss */
 .ck-profile-container {
   margin: 50px 0 100px 0;
   position: relative;
@@ -1044,7 +1049,7 @@ a.btn-secondary {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
-  /* line 554, ../sass/curekids.scss */
+  /* line 559, ../sass/curekids.scss */
   .ck-profile-container:before {
     content: "";
     height: 40px;
@@ -1060,7 +1065,7 @@ a.btn-secondary {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px; }
-  /* line 567, ../sass/curekids.scss */
+  /* line 572, ../sass/curekids.scss */
   .ck-profile-container:after {
     content: "";
     display: block;
@@ -1082,12 +1087,12 @@ a.btn-secondary {
     -webkit-border-radius: 5px;
     border-radius: 5px; }
   @media screen and (max-width: 1150px) {
-    /* line 544, ../sass/curekids.scss */
+    /* line 549, ../sass/curekids.scss */
     .ck-profile-container {
       width: 90%;
       margin: 50px auto 100px; } }
   @media screen and (max-width: 650px) {
-    /* line 544, ../sass/curekids.scss */
+    /* line 549, ../sass/curekids.scss */
     .ck-profile-container {
       width: 100%;
       margin-top: 0px;
@@ -1096,7 +1101,7 @@ a.btn-secondary {
       -webkit-box-shadow: none;
       box-shadow: none;
       background-color: transparent; }
-      /* line 596, ../sass/curekids.scss */
+      /* line 601, ../sass/curekids.scss */
       .ck-profile-container:before, .ck-profile-container:after {
         display: none;
         border: none;
@@ -1106,26 +1111,27 @@ a.btn-secondary {
         background-color: transparent;
         background-image: none; } }
 
-/* line 607, ../sass/curekids.scss */
+/* line 612, ../sass/curekids.scss */
 .ck-profile-header {
   position: relative; }
   @media screen and (max-width: 767px) {
-    /* line 607, ../sass/curekids.scss */
+    /* line 612, ../sass/curekids.scss */
     .ck-profile-header {
       margin-bottom: 60px; } }
 
-/* line 616, ../sass/curekids.scss */
+/* line 621, ../sass/curekids.scss */
 .ck-profile-name {
+  display: inline;
   float: left;
   margin: 25px 0 0 40px;
   font-size: 38px; }
   @media screen and (max-width: 1150px) {
-    /* line 616, ../sass/curekids.scss */
+    /* line 621, ../sass/curekids.scss */
     .ck-profile-name {
       margin: 15px 0 0 25px;
       font-size: 32px; } }
   @media screen and (max-width: 767px) {
-    /* line 616, ../sass/curekids.scss */
+    /* line 621, ../sass/curekids.scss */
     .ck-profile-name {
       float: none;
       margin: 10px 0 0 0;
@@ -1134,7 +1140,7 @@ a.btn-secondary {
       font-size: 36px;
       text-align: left; } }
 
-/* line 636, ../sass/curekids.scss */
+/* line 642, ../sass/curekids.scss */
 .ck-profile-country {
   clear: left;
   float: left;
@@ -1145,24 +1151,24 @@ a.btn-secondary {
   letter-spacing: 2px;
   color: #999; }
   @media screen and (max-width: 1150px) {
-    /* line 636, ../sass/curekids.scss */
+    /* line 642, ../sass/curekids.scss */
     .ck-profile-country {
       margin: -1px 0 0 25px; } }
   @media screen and (max-width: 767px) {
-    /* line 636, ../sass/curekids.scss */
+    /* line 642, ../sass/curekids.scss */
     .ck-profile-country {
       float: none;
       margin-left: 0px;
       padding-left: 28px;
       text-align: left; } }
 
-/* line 658, ../sass/curekids.scss */
+/* line 664, ../sass/curekids.scss */
 .btn-ck-follow {
   padding: 11px 18px 7px 14px;
   position: absolute;
   left: -123px;
   top: 31px; }
-  /* line 664, ../sass/curekids.scss */
+  /* line 670, ../sass/curekids.scss */
   .btn-ck-follow:after {
     content: " ";
     display: inline-block;
@@ -1173,34 +1179,34 @@ a.btn-secondary {
     top: -1px;
     background-image: url(../img/follow-icon.svg); }
   @media screen and (max-width: 1150px) {
-    /* line 658, ../sass/curekids.scss */
+    /* line 664, ../sass/curekids.scss */
     .btn-ck-follow {
       top: 22px; } }
   @media screen and (max-width: 850px) {
-    /* line 658, ../sass/curekids.scss */
+    /* line 664, ../sass/curekids.scss */
     .btn-ck-follow {
       font-size: 16px; } }
 
-/* line 684, ../sass/curekids.scss */
+/* line 690, ../sass/curekids.scss */
 .btn-ck-follow-mobile {
   display: none; }
   @media screen and (max-width: 767px) {
-    /* line 684, ../sass/curekids.scss */
+    /* line 690, ../sass/curekids.scss */
     .btn-ck-follow-mobile {
       display: block;
       right: 28px;
       top: 11px;
       left: inherit; } }
   @media screen and (max-width: 480px) {
-    /* line 684, ../sass/curekids.scss */
+    /* line 690, ../sass/curekids.scss */
     .btn-ck-follow-mobile {
-      padding: 11px 14px 9px 14px;
-      font-size: 14px; }
-      /* line 698, ../sass/curekids.scss */
+      padding: 12px 20px 10px;
+      font-size: 16px; }
+      /* line 704, ../sass/curekids.scss */
       .btn-ck-follow-mobile:after {
         display: none; } }
 
-/* line 704, ../sass/curekids.scss */
+/* line 710, ../sass/curekids.scss */
 .ck-profile-header-col-1 {
   float: left;
   *zoom: 1; }
@@ -1210,37 +1216,56 @@ a.btn-secondary {
     display: table;
     clear: both; }
   @media screen and (max-width: 767px) {
-    /* line 704, ../sass/curekids.scss */
+    /* line 710, ../sass/curekids.scss */
     .ck-profile-header-col-1 {
       width: 100%;
       float: none;
       margin: 15px 0 20px; }
-      /* line 713, ../sass/curekids.scss */
+      /* line 719, ../sass/curekids.scss */
       .ck-profile-header-col-1:after {
         display: none; } }
+  @media screen and (max-width: 370px) {
+    /* line 725, ../sass/curekids.scss */
+    .ck-profile-header-col-1.large-name {
+      padding: 0 28px; }
+      /* line 728, ../sass/curekids.scss */
+      .ck-profile-header-col-1.large-name .ck-profile-name,
+      .ck-profile-header-col-1.large-name .ck-profile-country {
+        display: block;
+        padding: 0;
+        float: none;
+        text-align: center; }
+      /* line 736, ../sass/curekids.scss */
+      .ck-profile-header-col-1.large-name .btn-ck-follow-mobile {
+        width: 100%;
+        position: static;
+        margin: 15px 0;
+        padding: 12px 23px 10px;
+        font-size: 16px;
+        text-align: center; } }
 
-/* line 719, ../sass/curekids.scss */
+/* line 749, ../sass/curekids.scss */
 .ck-profile-header-col-2 {
   height: 100px;
   margin: 0;
   position: relative;
   float: right; }
   @media screen and (max-width: 1150px) {
-    /* line 719, ../sass/curekids.scss */
+    /* line 749, ../sass/curekids.scss */
     .ck-profile-header-col-2 {
       height: 80px; } }
   @media screen and (max-width: 767px) {
-    /* line 719, ../sass/curekids.scss */
+    /* line 749, ../sass/curekids.scss */
     .ck-profile-header-col-2 {
       width: 100%;
       height: inherit;
       position: absolute;
       bottom: -65px; }
-      /* line 735, ../sass/curekids.scss */
+      /* line 765, ../sass/curekids.scss */
       .ck-profile-header-col-2 .btn-ck-follow {
         display: none; } }
 
-/* line 741, ../sass/curekids.scss */
+/* line 771, ../sass/curekids.scss */
 .ck-profile-info {
   margin: 0;
   padding-left: 0;
@@ -1251,11 +1276,11 @@ a.btn-secondary {
     display: table;
     clear: both; }
   @media screen and (max-width: 767px) {
-    /* line 741, ../sass/curekids.scss */
+    /* line 771, ../sass/curekids.scss */
     .ck-profile-info {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1); } }
 
-/* line 751, ../sass/curekids.scss */
+/* line 781, ../sass/curekids.scss */
 .ck-profile-info-item {
   display: block;
   float: left;
@@ -1266,57 +1291,57 @@ a.btn-secondary {
   list-style-type: none;
   color: #362F2D; }
   @media screen and (max-width: 1150px) {
-    /* line 751, ../sass/curekids.scss */
+    /* line 781, ../sass/curekids.scss */
     .ck-profile-info-item {
       font-size: 16px;
       height: 80px; } }
   @media screen and (max-width: 920px) {
-    /* line 767, ../sass/curekids.scss */
+    /* line 797, ../sass/curekids.scss */
     .ck-profile-info-item:last-child {
       display: none; } }
   @media screen and (max-width: 767px) {
-    /* line 751, ../sass/curekids.scss */
+    /* line 781, ../sass/curekids.scss */
     .ck-profile-info-item {
       width: 33.3333333333333333%;
       height: 73px;
       position: relative;
       text-align: center; }
-      /* line 778, ../sass/curekids.scss */
+      /* line 808, ../sass/curekids.scss */
       .ck-profile-info-item:first-child {
         border-left: none; }
-      /* line 782, ../sass/curekids.scss */
+      /* line 812, ../sass/curekids.scss */
       .ck-profile-info-item:last-child {
         display: block; } }
   @media screen and (max-width: 650px) {
-    /* line 751, ../sass/curekids.scss */
+    /* line 781, ../sass/curekids.scss */
     .ck-profile-info-item {
       width: 40%;
       height: 70px; } }
   @media screen and (max-width: 480px) {
-    /* line 751, ../sass/curekids.scss */
+    /* line 781, ../sass/curekids.scss */
     .ck-profile-info-item {
       width: 65%; }
-      /* line 795, ../sass/curekids.scss */
+      /* line 825, ../sass/curekids.scss */
       .ck-profile-info-item:last-child {
         display: none; } }
 
-/* line 802, ../sass/curekids.scss */
+/* line 832, ../sass/curekids.scss */
 .ck-profile-info-item-age:after {
   content: " Years Old"; }
   @media screen and (max-width: 650px) {
-    /* line 802, ../sass/curekids.scss */
+    /* line 832, ../sass/curekids.scss */
     .ck-profile-info-item-age:after {
       display: none; } }
 @media screen and (max-width: 650px) {
-  /* line 801, ../sass/curekids.scss */
+  /* line 831, ../sass/curekids.scss */
   .ck-profile-info-item-age {
     width: 20%; } }
 @media screen and (max-width: 480px) {
-  /* line 801, ../sass/curekids.scss */
+  /* line 831, ../sass/curekids.scss */
   .ck-profile-info-item-age {
     width: 35%; } }
 
-/* line 819, ../sass/curekids.scss */
+/* line 849, ../sass/curekids.scss */
 .ck-profile-info-item-label {
   display: block;
   margin: 32px 0 4px 0;
@@ -1325,16 +1350,16 @@ a.btn-secondary {
   text-transform: uppercase;
   letter-spacing: 1px; }
   @media screen and (max-width: 1150px) {
-    /* line 819, ../sass/curekids.scss */
+    /* line 849, ../sass/curekids.scss */
     .ck-profile-info-item-label {
       margin-top: 25px;
       font-size: 10px; } }
   @media screen and (max-width: 650px) {
-    /* line 819, ../sass/curekids.scss */
+    /* line 849, ../sass/curekids.scss */
     .ck-profile-info-item-label {
       margin: 24px 0 1px; } }
 
-/* line 837, ../sass/curekids.scss */
+/* line 867, ../sass/curekids.scss */
 .ck-profile-photos-container {
   max-height: 548px;
   position: relative;
@@ -1347,35 +1372,35 @@ a.btn-secondary {
     display: table;
     clear: both; }
 
-/* line 845, ../sass/curekids.scss */
+/* line 875, ../sass/curekids.scss */
 .ck-profile-primary-photo {
   width: 81.3543599%;
   float: left; }
   @media screen and (max-width: 600px) {
-    /* line 845, ../sass/curekids.scss */
+    /* line 875, ../sass/curekids.scss */
     .ck-profile-primary-photo {
       width: 100%; } }
 
-/* line 854, ../sass/curekids.scss */
+/* line 884, ../sass/curekids.scss */
 .ck-profile-secondary-photo-container {
   width: 18.6456401%;
   max-height: 274px;
   position: relative;
   float: left; }
   @media screen and (max-width: 600px) {
-    /* line 854, ../sass/curekids.scss */
+    /* line 884, ../sass/curekids.scss */
     .ck-profile-secondary-photo-container {
       display: none; } }
 
-/* line 865, ../sass/curekids.scss */
+/* line 895, ../sass/curekids.scss */
 .ck-profile-secondary-photo {
   width: 100%; }
   @media screen and (max-width: 1150px) {
-    /* line 865, ../sass/curekids.scss */
+    /* line 895, ../sass/curekids.scss */
     .ck-profile-secondary-photo {
       margin-bottom: -4px; } }
 
-/* line 873, ../sass/curekids.scss */
+/* line 903, ../sass/curekids.scss */
 .ck-profile-secondary-photo-caption {
   padding: 10px 10px 6px;
   position: absolute;
@@ -1388,7 +1413,7 @@ a.btn-secondary {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
   background-color: rgba(0, 0, 0, 0.32); }
 
-/* line 886, ../sass/curekids.scss */
+/* line 916, ../sass/curekids.scss */
 .ck-profile-photo-thumbs-container {
   display: none;
   width: 81.3888889%;
@@ -1401,20 +1426,20 @@ a.btn-secondary {
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 80%);
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 80%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 80%); }
-  /* line 896, ../sass/curekids.scss */
+  /* line 926, ../sass/curekids.scss */
   .ck-profile-photo-thumbs-container.active {
     display: block; }
 
-/* line 901, ../sass/curekids.scss */
+/* line 931, ../sass/curekids.scss */
 .ck-profile-photo-thumbs {
   position: absolute;
   bottom: 10px;
   right: 10px; }
-  /* line 906, ../sass/curekids.scss */
+  /* line 936, ../sass/curekids.scss */
   .ck-profile-photo-thumbs a {
     border-bottom: none; }
 
-/* line 911, ../sass/curekids.scss */
+/* line 941, ../sass/curekids.scss */
 .ck-profile-photo-thumb {
   width: 75px;
   height: 75px;
@@ -1423,7 +1448,7 @@ a.btn-secondary {
   -webkit-border-radius: 3px;
   border-radius: 3px; }
 
-/* line 918, ../sass/curekids.scss */
+/* line 948, ../sass/curekids.scss */
 div[data-liffect="bounceInUp"] .ck-profile-photo-thumb {
   opacity: 0;
   position: relative;
@@ -1436,7 +1461,7 @@ div[data-liffect="bounceInUp"] .ck-profile-photo-thumb {
   animation: bounceInUp 500ms ease both;
   animation-play-state: paused; }
 
-/* line 931, ../sass/curekids.scss */
+/* line 961, ../sass/curekids.scss */
 div[data-liffect="bounceInUp"].play .ck-profile-photo-thumb {
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
@@ -1444,112 +1469,112 @@ div[data-liffect="bounceInUp"].play .ck-profile-photo-thumb {
   animation-play-state: running; }
 
 @-webkit-keyframes bounceInUp {
-  /* line 939, ../sass/curekids.scss */
+  /* line 969, ../sass/curekids.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px); }
 
-  /* line 940, ../sass/curekids.scss */
+  /* line 970, ../sass/curekids.scss */
   60% {
     -webkit-transform: translateY(0px); }
 
-  /* line 941, ../sass/curekids.scss */
+  /* line 971, ../sass/curekids.scss */
   80% {
     -webkit-transform: translateY(0px); }
 
-  /* line 942, ../sass/curekids.scss */
+  /* line 972, ../sass/curekids.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0); } }
 @-moz-keyframes bounceInUp {
-  /* line 946, ../sass/curekids.scss */
+  /* line 976, ../sass/curekids.scss */
   0% {
     opacity: 0;
     -moz-transform: translateY(20px); }
 
-  /* line 947, ../sass/curekids.scss */
+  /* line 977, ../sass/curekids.scss */
   60% {
     -moz-transform: translateY(0px); }
 
-  /* line 948, ../sass/curekids.scss */
+  /* line 978, ../sass/curekids.scss */
   80% {
     -moz-transform: translateY(0px); }
 
-  /* line 949, ../sass/curekids.scss */
+  /* line 979, ../sass/curekids.scss */
   100% {
     opacity: 1;
     -moz-transform: translateY(0); } }
 @-o-keyframes bounceInUp {
-  /* line 953, ../sass/curekids.scss */
+  /* line 983, ../sass/curekids.scss */
   0% {
     opacity: 0;
     -o-transform: translateY(20px); }
 
-  /* line 954, ../sass/curekids.scss */
+  /* line 984, ../sass/curekids.scss */
   60% {
     -o-transform: translateY(0px); }
 
-  /* line 955, ../sass/curekids.scss */
+  /* line 985, ../sass/curekids.scss */
   80% {
     -o-transform: translateY(0px); }
 
-  /* line 956, ../sass/curekids.scss */
+  /* line 986, ../sass/curekids.scss */
   100% {
     opacity: 1;
     -o-transform: translateY(0); } }
 @keyframes bounceInUp {
-  /* line 960, ../sass/curekids.scss */
+  /* line 990, ../sass/curekids.scss */
   0% {
     opacity: 0;
     transform: translateY(20px); }
 
-  /* line 961, ../sass/curekids.scss */
+  /* line 991, ../sass/curekids.scss */
   60% {
     transform: translateY(0px); }
 
-  /* line 962, ../sass/curekids.scss */
+  /* line 992, ../sass/curekids.scss */
   80% {
     transform: translateY(0px); }
 
-  /* line 963, ../sass/curekids.scss */
+  /* line 993, ../sass/curekids.scss */
   100% {
     opacity: 1;
     transform: translateY(0); } }
 /*-- Primary profile content --*/
-/* line 968, ../sass/curekids.scss */
+/* line 998, ../sass/curekids.scss */
 .ck-profile-primary-content {
   max-width: 700px;
   float: left;
   padding-left: 40px; }
   @media screen and (max-width: 1150px) {
-    /* line 968, ../sass/curekids.scss */
+    /* line 998, ../sass/curekids.scss */
     .ck-profile-primary-content {
       width: 60%; } }
   @media screen and (max-width: 850px) {
-    /* line 968, ../sass/curekids.scss */
+    /* line 998, ../sass/curekids.scss */
     .ck-profile-primary-content {
       width: 100%;
       padding: 0 28px;
       max-width: inherit; } }
 
-/* line 984, ../sass/curekids.scss */
+/* line 1014, ../sass/curekids.scss */
 .ck-profile-section {
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
 
-/* line 989, ../sass/curekids.scss */
+/* line 1019, ../sass/curekids.scss */
 .ck-profile-section-description {
   text-align: center; }
 
-/* line 993, ../sass/curekids.scss */
+/* line 1023, ../sass/curekids.scss */
 .ck-profile-update-date {
   font-size: 13px;
   color: #888; }
 
-/* line 998, ../sass/curekids.scss */
+/* line 1028, ../sass/curekids.scss */
 .ck-profile-update-copy {
   margin: 8px 0 0 0; }
-  /* line 1001, ../sass/curekids.scss */
+  /* line 1031, ../sass/curekids.scss */
   .ck-profile-update-copy:after {
     content: "";
     display: block;
@@ -1558,7 +1583,7 @@ div[data-liffect="bounceInUp"].play .ck-profile-photo-thumb {
     margin: 17px 0 25px;
     background-color: rgba(0, 0, 0, 0.14); }
 
-/* line 1011, ../sass/curekids.scss */
+/* line 1041, ../sass/curekids.scss */
 a.ck-profile-get-well-inline-media {
   width: 75px;
   height: 75px;
@@ -1570,33 +1595,105 @@ a.ck-profile-get-well-inline-media {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px; }
-  /* line 1021, ../sass/curekids.scss */
+  /* line 1051, ../sass/curekids.scss */
   a.ck-profile-get-well-inline-media .zoom-icon {
     display: none;
     position: absolute;
     top: 23px;
     left: 23px; }
 
-/* line 1029, ../sass/curekids.scss */
+/* line 1059, ../sass/curekids.scss */
 .ck-profile-get-well {
   border-bottom: none; }
 
-/* line 1033, ../sass/curekids.scss */
+/* line 1063, ../sass/curekids.scss */
 .get-well-media-poster {
   height: 75px; }
 
-/* line 1037, ../sass/curekids.scss */
+/* line 1067, ../sass/curekids.scss */
 .btn-more-updates {
   width: 175px; }
+  @media screen and (max-width: 650px) {
+    /* line 1067, ../sass/curekids.scss */
+    .btn-more-updates {
+      width: 200px; } }
 
-/* line 1041, ../sass/curekids.scss */
+/* line 1075, ../sass/curekids.scss */
+.get-well-options {
+  margin-bottom: -16px; }
+  /* line 1078, ../sass/curekids.scss */
+  .get-well-options.active {
+    display: block;
+    position: relative;
+    bottom: 3px; }
+  @media screen and (max-width: 1150px) {
+    /* line 1075, ../sass/curekids.scss */
+    .get-well-options {
+      margin-bottom: -44px; } }
+  @media screen and (max-width: 850px) {
+    /* line 1075, ../sass/curekids.scss */
+    .get-well-options {
+      margin-bottom: -23px; } }
+  @media screen and (max-width: 760px) {
+    /* line 1075, ../sass/curekids.scss */
+    .get-well-options {
+      margin-bottom: -44px; } }
+  @media screen and (max-width: 480px) {
+    /* line 1075, ../sass/curekids.scss */
+    .get-well-options {
+      display: none; } }
+  @media screen and (max-width: 440px) {
+    /* line 1101, ../sass/curekids.scss */
+    .get-well-options.active {
+      display: block;
+      margin-bottom: -76px; }
+    /* line 1106, ../sass/curekids.scss */
+    .get-well-options .btn-ck-profile-get-well-add-video,
+    .get-well-options .btn-ck-profile-get-well-add-photo,
+    .get-well-options .btn-ck-profile-get-well-add-video {
+      display: block; }
+    /* line 1111, ../sass/curekids.scss */
+    .get-well-options .btn-ck-profile-get-well-add-video {
+      margin-top: 10px; } }
+
+/* line 1117, ../sass/curekids.scss */
+.get-well-options-toggle {
+  display: none;
+  border: none;
+  outline: none;
+  float: left;
+  position: relative;
+  top: 3px;
+  padding: 0px;
+  font-size: 14px;
+  color: #947D7B;
+  background-color: transparent;
+  cursor: pointer; }
+  /* line 1130, ../sass/curekids.scss */
+  .get-well-options-toggle:before {
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 14px;
+    margin-right: 9px;
+    position: relative;
+    top: 2px;
+    background-image: url(../img/options-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center; }
+  @media screen and (max-width: 480px) {
+    /* line 1117, ../sass/curekids.scss */
+    .get-well-options-toggle {
+      display: block; } }
+
+/* line 1148, ../sass/curekids.scss */
 .btn-ck-profile-get-well-add-photo, .btn-ck-profile-get-well-add-video {
   margin-right: 28px;
   position: relative;
   font-size: 14px;
   color: #947D7B;
   border-bottom: none; }
-  /* line 1048, ../sass/curekids.scss */
+  /* line 1155, ../sass/curekids.scss */
   .btn-ck-profile-get-well-add-photo:before, .btn-ck-profile-get-well-add-video:before {
     content: "";
     display: inline-block;
@@ -1609,75 +1706,92 @@ a.ck-profile-get-well-inline-media {
     background-repeat: no-repeat;
     background-position: center; }
 
-/* line 1065, ../sass/curekids.scss */
+/* line 1172, ../sass/curekids.scss */
 .btn-ck-profile-get-well-add-video:before {
   background-image: url(../img/video-camera-icon.svg); }
 
-/* line 1070, ../sass/curekids.scss */
+/* line 1177, ../sass/curekids.scss */
 .get-well-form-checkbox-container {
   display: inline-block;
   font-size: 14px;
   color: #947D7B; }
+  @media screen and (max-width: 1150px) {
+    /* line 1177, ../sass/curekids.scss */
+    .get-well-form-checkbox-container {
+      display: block;
+      clear: left;
+      margin-top: 11px; } }
+  @media screen and (max-width: 850px) {
+    /* line 1177, ../sass/curekids.scss */
+    .get-well-form-checkbox-container {
+      display: inline-block;
+      clear: inherit; } }
+  @media screen and (max-width: 760px) {
+    /* line 1177, ../sass/curekids.scss */
+    .get-well-form-checkbox-container {
+      display: block;
+      clear: left;
+      margin-top: 11px; } }
 
-/* line 1076, ../sass/curekids.scss */
+/* line 1200, ../sass/curekids.scss */
 .get-well-form-checkbox {
   position: relative;
   bottom: 1px; }
 
-/* line 1081, ../sass/curekids.scss */
+/* line 1205, ../sass/curekids.scss */
 .get-well-form-checkbox {
   font-size: 16px;
   margin-right: 3px; }
 
-/* line 1086, ../sass/curekids.scss */
+/* line 1210, ../sass/curekids.scss */
 .get-well-btn-submit {
   float: right;
   position: relative;
-  bottom: 8px; }
+  bottom: 4px; }
 
 /*-- Secondary Profile Content --*/
-/* line 1094, ../sass/curekids.scss */
+/* line 1218, ../sass/curekids.scss */
 .ck-profile-secondary-content {
   float: left;
   max-width: 286px;
   margin-left: 50px; }
-  /* line 1099, ../sass/curekids.scss */
+  /* line 1223, ../sass/curekids.scss */
   .ck-profile-secondary-content .ck-profile-section {
     margin-bottom: 30px;
     padding-bottom: 30px; }
-    /* line 1103, ../sass/curekids.scss */
+    /* line 1227, ../sass/curekids.scss */
     .ck-profile-secondary-content .ck-profile-section p {
       margin-top: 0px; }
-  /* line 1108, ../sass/curekids.scss */
+  /* line 1232, ../sass/curekids.scss */
   .ck-profile-secondary-content .header-ck-profile-section {
     margin-bottom: 10px;
     text-align: center; }
-  /* line 1113, ../sass/curekids.scss */
+  /* line 1237, ../sass/curekids.scss */
   .ck-profile-secondary-content p, .ck-profile-secondary-content ul, .ck-profile-secondary-content blockquote, .ck-profile-secondary-content cite {
     font-size: 13px;
     line-height: 21px;
     color: #847d7b; }
-  /* line 1119, ../sass/curekids.scss */
+  /* line 1243, ../sass/curekids.scss */
   .ck-profile-secondary-content a {
     font-size: 13px; }
-  /* line 1123, ../sass/curekids.scss */
+  /* line 1247, ../sass/curekids.scss */
   .ck-profile-secondary-content .alert {
     margin: 20px 0 0 0; }
   @media screen and (max-width: 1150px) {
-    /* line 1094, ../sass/curekids.scss */
+    /* line 1218, ../sass/curekids.scss */
     .ck-profile-secondary-content {
       width: 30%; } }
   @media screen and (max-width: 850px) {
-    /* line 1094, ../sass/curekids.scss */
+    /* line 1218, ../sass/curekids.scss */
     .ck-profile-secondary-content {
       display: none; } }
 
-/* line 1144, ../sass/curekids.scss */
+/* line 1268, ../sass/curekids.scss */
 .ck-profile-secondary-content .ck-profile-donate-form-container {
   margin: 40px 0;
   padding-bottom: 40px; }
 
-/* line 1149, ../sass/curekids.scss */
+/* line 1273, ../sass/curekids.scss */
 .ck-profile-donate-form {
   padding: 20px;
   background-color: #f8f6f1;
@@ -1688,52 +1802,52 @@ a.ck-profile-get-well-inline-media {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px; }
-  /* line 1156, ../sass/curekids.scss */
+  /* line 1280, ../sass/curekids.scss */
   .ck-profile-donate-form .header-ck-profile-section {
     margin: 0px 0 3px;
     text-shadow: 0 1px 0 #fff; }
-  /* line 1161, ../sass/curekids.scss */
+  /* line 1285, ../sass/curekids.scss */
   .ck-profile-donate-form .link-form-more-info {
     display: block;
     max-width: 115px;
     margin: 0 auto 25px;
     font-size: 12px; }
-  /* line 1168, ../sass/curekids.scss */
+  /* line 1292, ../sass/curekids.scss */
   .ck-profile-donate-form input[type="text"]::-webkit-input-placeholder, .ck-profile-donate-form textarea::-webkit-input-placeholder,
   .ck-profile-donate-form input[type="text"]::-webkit-input-placeholder,
   .ck-profile-donate-form textarea::-webkit-input-placeholder {
     color: #A29682; }
-  /* line 1173, ../sass/curekids.scss */
+  /* line 1297, ../sass/curekids.scss */
   .ck-profile-donate-form input[type="text"]:-moz-placeholder, .ck-profile-donate-form textarea:-moz-placeholder,
   .ck-profile-donate-form input[type="text"]:-moz-placeholder,
   .ck-profile-donate-form textarea:-moz-placeholder {
     /* FF 4-18 */
     color: #A29682; }
-  /* line 1179, ../sass/curekids.scss */
+  /* line 1303, ../sass/curekids.scss */
   .ck-profile-donate-form input[type="text"]::-moz-placeholder, .ck-profile-donate-form textarea::-moz-placeholder,
   .ck-profile-donate-form input[type="text"]::-moz-placeholder,
   .ck-profile-donate-form textarea::-moz-placeholder {
     /* FF 19+ */
     color: #A29682; }
-  /* line 1185, ../sass/curekids.scss */
+  /* line 1309, ../sass/curekids.scss */
   .ck-profile-donate-form input[type="text"]:-ms-input-placeholder, .ck-profile-donate-form textarea:-ms-input-placeholder,
   .ck-profile-donate-form input[type="text"]:-ms-input-placeholder,
   .ck-profile-donate-form textarea:-ms-input-placeholder {
     /* IE 10+ */
     color: #A29682; }
 
-/* line 1192, ../sass/curekids.scss */
+/* line 1316, ../sass/curekids.scss */
 .ck-profile-donate-svg {
   fill: #198c45; }
 
-/* line 1196, ../sass/curekids.scss */
+/* line 1320, ../sass/curekids.scss */
 input.ck-profile-donate-input {
   width: 100%;
   margin-bottom: 10px;
   padding-left: 38px;
   border-color: #C8BEAC;
   color: #7c705c; }
-  /* line 1203, ../sass/curekids.scss */
+  /* line 1327, ../sass/curekids.scss */
   input.ck-profile-donate-input:focus {
     border-color: #1CA350;
     outline: none;
@@ -1741,21 +1855,21 @@ input.ck-profile-donate-input {
     -webkit-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 0 6px rgba(63, 149, 67, 0.6);
     box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 0 6px rgba(63, 149, 67, 0.6); }
 
-/* line 1210, ../sass/curekids.scss */
+/* line 1334, ../sass/curekids.scss */
 .input-wrap.half-width {
   width: 47.9508197%;
   float: left; }
-  /* line 1214, ../sass/curekids.scss */
+  /* line 1338, ../sass/curekids.scss */
   .input-wrap.half-width:not(.last-half-width) {
     margin-right: 04.0983607%; }
 
-/* line 1219, ../sass/curekids.scss */
+/* line 1343, ../sass/curekids.scss */
 .ck-profile-donate-form .btn-submit {
   margin-top: 20px;
   width: 100%;
   font-weight: bold; }
 
-/* line 1225, ../sass/curekids.scss */
+/* line 1349, ../sass/curekids.scss */
 .link-aside-center {
   position: relative;
   top: 15px;
@@ -1763,7 +1877,7 @@ input.ck-profile-donate-input {
   margin-right: 12px;
   font-size: 13px; }
 
-/* line 1233, ../sass/curekids.scss */
+/* line 1357, ../sass/curekids.scss */
 .funding-meter-base {
   height: 30px;
   width: 100%;
@@ -1773,7 +1887,7 @@ input.ck-profile-donate-input {
   -webkit-border-radius: 5px;
   border-radius: 5px; }
 
-/* line 1241, ../sass/curekids.scss */
+/* line 1365, ../sass/curekids.scss */
 .funding-meter-fill {
   width: 60%;
   height: 30px;
@@ -1786,7 +1900,7 @@ input.ck-profile-donate-input {
   -webkit-border-radius: 5px;
   border-radius: 5px 0 0 5px; }
 
-/* line 1252, ../sass/curekids.scss */
+/* line 1376, ../sass/curekids.scss */
 .funding-meter-stats {
   margin-bottom: 0px;
   font-size: 13px;
@@ -1794,27 +1908,27 @@ input.ck-profile-donate-input {
   letter-spacing: 1px;
   list-style-type: none;
   color: #666; }
-  /* line 1260, ../sass/curekids.scss */
+  /* line 1384, ../sass/curekids.scss */
   .funding-meter-stats li {
     display: inline-block;
     margin: 1px 14px 0 0; }
 
-/* line 1266, ../sass/curekids.scss */
+/* line 1390, ../sass/curekids.scss */
 .funding-meter-stat-amount {
   color: #198c45;
   font-weight: bold; }
 
-/* line 1271, ../sass/curekids.scss */
+/* line 1395, ../sass/curekids.scss */
 .link-ecfa-badge {
   float: right;
   width: 50px;
   height: 50px; }
 
-/* line 1277, ../sass/curekids.scss */
+/* line 1401, ../sass/curekids.scss */
 .fa-graph {
   position: relative; }
 
-/* line 1281, ../sass/curekids.scss */
+/* line 1405, ../sass/curekids.scss */
 .fa-graph-label {
   display: block;
   width: 50px;
@@ -1827,7 +1941,7 @@ input.ck-profile-donate-input {
   letter-spacing: 1px;
   color: #999; }
 
-/* line 1294, ../sass/curekids.scss */
+/* line 1418, ../sass/curekids.scss */
 .fa-foot-note {
   display: block;
   width: 86px;
@@ -1838,17 +1952,17 @@ input.ck-profile-donate-input {
   text-align: center;
   color: #999; }
 
-/* line 1305, ../sass/curekids.scss */
+/* line 1429, ../sass/curekids.scss */
 .fa-color-label-container {
   width: 210px;
   margin: -94px 0 0 86px;
   list-style-type: none; }
 
-/* line 1311, ../sass/curekids.scss */
+/* line 1435, ../sass/curekids.scss */
 .fa-graph-color-description {
   margin-bottom: 8px;
   position: relative; }
-  /* line 1315, ../sass/curekids.scss */
+  /* line 1439, ../sass/curekids.scss */
   .fa-graph-color-description:before {
     content: "";
     display: block;
@@ -1857,27 +1971,27 @@ input.ck-profile-donate-input {
     left: -25px;
     width: 18px;
     height: 18px; }
-  /* line 1325, ../sass/curekids.scss */
+  /* line 1449, ../sass/curekids.scss */
   .fa-graph-color-description:first-child:before {
     background-color: #8CC63F; }
-  /* line 1329, ../sass/curekids.scss */
+  /* line 1453, ../sass/curekids.scss */
   .fa-graph-color-description:nth-child(2):before {
     background-color: #D6DE23; }
-  /* line 1333, ../sass/curekids.scss */
+  /* line 1457, ../sass/curekids.scss */
   .fa-graph-color-description:nth-child(3):before {
     background-color: #198c45; }
 
-/* line 1338, ../sass/curekids.scss */
+/* line 1462, ../sass/curekids.scss */
 .fa-color-label strong {
   color: #362F2D; }
 
-/* line 1342, ../sass/curekids.scss */
+/* line 1466, ../sass/curekids.scss */
 .fa-color-label-description {
   display: block;
   font-size: 10px;
   line-height: 13px; }
 
-/* line 1348, ../sass/curekids.scss */
+/* line 1472, ../sass/curekids.scss */
 .testimonial-avatar {
   width: 55px;
   height: 55px;
@@ -1887,7 +2001,7 @@ input.ck-profile-donate-input {
   -webkit-border-radius: 3px;
   border-radius: 3px; }
 
-/* line 1356, ../sass/curekids.scss */
+/* line 1480, ../sass/curekids.scss */
 .ck-profile-testimonial {
   *zoom: 1; }
   /* line 38, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -1895,23 +2009,23 @@ input.ck-profile-donate-input {
     content: "";
     display: table;
     clear: both; }
-  /* line 1359, ../sass/curekids.scss */
+  /* line 1483, ../sass/curekids.scss */
   .ck-profile-testimonial blockquote.testimonial-body {
     margin: 0;
     font-style: italic; }
-  /* line 1364, ../sass/curekids.scss */
+  /* line 1488, ../sass/curekids.scss */
   .ck-profile-testimonial cite {
     margin-top: 10px;
     float: right; }
-    /* line 1368, ../sass/curekids.scss */
+    /* line 1492, ../sass/curekids.scss */
     .ck-profile-testimonial cite:before {
       content: "- "; }
 
-/* line 1374, ../sass/curekids.scss */
+/* line 1498, ../sass/curekids.scss */
 .ck-profile-procedures {
   border-bottom: none; }
 
-/* line 1378, ../sass/curekids.scss */
+/* line 1502, ../sass/curekids.scss */
 .procedure-record {
   height: 50px;
   margin-top: 19px;
@@ -1924,7 +2038,7 @@ input.ck-profile-donate-input {
     display: table;
     clear: both; }
 
-/* line 1386, ../sass/curekids.scss */
+/* line 1510, ../sass/curekids.scss */
 .procedure-photo-thumb {
   width: 50px;
   height: 50px;
@@ -1935,21 +2049,21 @@ input.ck-profile-donate-input {
   -webkit-border-radius: 3px;
   border-radius: 3px; }
 
-/* line 1395, ../sass/curekids.scss */
+/* line 1519, ../sass/curekids.scss */
 .procedure-photo-thumb-before {
   left: 0;
   -moz-box-shadow: 15px 0 0 white;
   -webkit-box-shadow: 15px 0 0 white;
   box-shadow: 15px 0 0 white; }
 
-/* line 1400, ../sass/curekids.scss */
+/* line 1524, ../sass/curekids.scss */
 .procedure-photo-thumb-after {
   right: 0;
   -moz-box-shadow: -15px 0 0 white;
   -webkit-box-shadow: -15px 0 0 white;
   box-shadow: -15px 0 0 white; }
 
-/* line 1405, ../sass/curekids.scss */
+/* line 1529, ../sass/curekids.scss */
 .procedure-date {
   display: block;
   text-align: center;
@@ -1957,7 +2071,7 @@ input.ck-profile-donate-input {
   top: 17px;
   font-size: 13px;
   color: #847d7b; }
-  /* line 1413, ../sass/curekids.scss */
+  /* line 1537, ../sass/curekids.scss */
   .procedure-date:before {
     content: "";
     display: block;
@@ -1966,7 +2080,7 @@ input.ck-profile-donate-input {
     top: 7px;
     left: -15px;
     border-bottom: 1px dotted #9d9795; }
-  /* line 1423, ../sass/curekids.scss */
+  /* line 1547, ../sass/curekids.scss */
   .procedure-date:after {
     content: "";
     display: block;
@@ -1979,7 +2093,7 @@ input.ck-profile-donate-input {
 /*-------------------------*/
 /*-- Other Kids Section ---*/
 /*-------------------------*/
-/* line 1438, ../sass/curekids.scss */
+/* line 1562, ../sass/curekids.scss */
 .header-other-kids {
   display: block;
   width: 335px;
@@ -1987,7 +2101,7 @@ input.ck-profile-donate-input {
   padding-right: 10px;
   position: relative;
   text-shadow: 0 0 20px #fff; }
-  /* line 1446, ../sass/curekids.scss */
+  /* line 1570, ../sass/curekids.scss */
   .header-other-kids:before {
     content: "";
     display: block;
@@ -1997,7 +2111,7 @@ input.ck-profile-donate-input {
     left: 100%;
     margin: 15px 0 0 0;
     background-color: rgba(0, 0, 0, 0.1); }
-  /* line 1457, ../sass/curekids.scss */
+  /* line 1581, ../sass/curekids.scss */
   .header-other-kids:after {
     content: "";
     display: block;
@@ -2007,12 +2121,12 @@ input.ck-profile-donate-input {
     right: 100%;
     margin: -20px 20px 0 0;
     background-color: rgba(0, 0, 0, 0.1); }
-  @media screen and (max-width: 767px) {
-    /* line 1438, ../sass/curekids.scss */
+  @media screen and (max-width: 600px) {
+    /* line 1562, ../sass/curekids.scss */
     .header-other-kids {
       display: none; } }
 
-/* line 1473, ../sass/curekids.scss */
+/* line 1597, ../sass/curekids.scss */
 .other-kids-container {
   overflow: hidden;
   *zoom: 1; }
@@ -2021,25 +2135,36 @@ input.ck-profile-donate-input {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (max-width: 767px) {
-    /* line 1473, ../sass/curekids.scss */
+  @media screen and (max-width: 1150px) {
+    /* line 1597, ../sass/curekids.scss */
+    .other-kids-container {
+      width: 90%;
+      margin: 0 auto; } }
+  @media screen and (max-width: 850px) {
+    /* line 1597, ../sass/curekids.scss */
+    .other-kids-container {
+      width: 100%;
+      padding: 0 28px; } }
+  @media screen and (max-width: 600px) {
+    /* line 1597, ../sass/curekids.scss */
     .other-kids-container {
       display: none; } }
 
-/* line 1482, ../sass/curekids.scss */
+/* line 1616, ../sass/curekids.scss */
 .other-kid-container {
-  max-width: 260px;
+  width: 24.09722225%;
   height: 180px;
+  margin-right: 1.2037037%;
   float: left;
   position: relative;
   overflow: hidden;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px; }
-  /* line 1490, ../sass/curekids.scss */
-  .other-kid-container:not(:last-child) {
-    margin-right: 13px; }
-  /* line 1494, ../sass/curekids.scss */
+  /* line 1625, ../sass/curekids.scss */
+  .other-kid-container:last-child {
+    margin-right: 0; }
+  /* line 1629, ../sass/curekids.scss */
   .other-kid-container:before {
     content: "";
     display: block;
@@ -2052,8 +2177,30 @@ input.ck-profile-donate-input {
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 80%);
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 80%);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 80%); }
+  @media screen and (max-width: 1150px) {
+    /* line 1616, ../sass/curekids.scss */
+    .other-kid-container {
+      width: 32.4210526%;
+      margin-right: 1.3684211%; }
+      /* line 1644, ../sass/curekids.scss */
+      .other-kid-container:nth-of-type(3) {
+        margin-right: 0; }
+      /* line 1648, ../sass/curekids.scss */
+      .other-kid-container:last-child {
+        display: none; } }
+  @media screen and (max-width: 800px) {
+    /* line 1616, ../sass/curekids.scss */
+    .other-kid-container {
+      width: 49.1875%;
+      margin-right: 1.625%; }
+      /* line 1657, ../sass/curekids.scss */
+      .other-kid-container:nth-of-type(2) {
+        margin-right: 0; }
+      /* line 1661, ../sass/curekids.scss */
+      .other-kid-container:last-child, .other-kid-container:nth-of-type(2) {
+        display: none; } }
 
-/* line 1506, ../sass/curekids.scss */
+/* line 1668, ../sass/curekids.scss */
 .other-kid-name {
   margin: 0px;
   position: absolute;
@@ -2063,7 +2210,7 @@ input.ck-profile-donate-input {
   color: #fff;
   text-shadow: 0 1px 2px #000; }
 
-/* line 1516, ../sass/curekids.scss */
+/* line 1678, ../sass/curekids.scss */
 .other-kid-info {
   position: absolute;
   bottom: 10px;
@@ -2073,17 +2220,17 @@ input.ck-profile-donate-input {
   letter-spacing: 2px;
   color: #fff;
   text-shadow: 0 1px 1px #000; }
-  /* line 1526, ../sass/curekids.scss */
+  /* line 1688, ../sass/curekids.scss */
   .other-kid-info li {
     display: inline; }
 
-/* line 1531, ../sass/curekids.scss */
+/* line 1693, ../sass/curekids.scss */
 .other-kid-country:after {
   content: " | ";
   display: inline-block;
   margin: 0 3px 0 6px; }
 
-/* line 1537, ../sass/curekids.scss */
+/* line 1699, ../sass/curekids.scss */
 .other-kid-image {
   width: 100%;
   -moz-border-radius: 5px;
@@ -2093,7 +2240,7 @@ input.ck-profile-donate-input {
 /*-------------------------*/
 /*----- Footer Styles -----*/
 /*-------------------------*/
-/* line 1546, ../sass/curekids.scss */
+/* line 1708, ../sass/curekids.scss */
 .footer-container {
   margin-top: 75px;
   padding: 40px 0 0;
@@ -2102,12 +2249,12 @@ input.ck-profile-donate-input {
   -moz-box-shadow: 0 -3px 0 #e5e5e5;
   -webkit-box-shadow: 0 -3px 0 #e5e5e5;
   box-shadow: 0 -3px 0 #e5e5e5; }
-  /* line 1553, ../sass/curekids.scss */
+  /* line 1715, ../sass/curekids.scss */
   .footer-container ul {
     padding-left: 0px;
     list-style-type: none; }
 
-/* line 1559, ../sass/curekids.scss */
+/* line 1721, ../sass/curekids.scss */
 .primary-section-container {
   max-width: 1080px;
   margin: 0 auto;
@@ -2117,13 +2264,29 @@ input.ck-profile-donate-input {
     content: "";
     display: table;
     clear: both; }
-  /* line 1564, ../sass/curekids.scss */
+  /* line 1726, ../sass/curekids.scss */
   .primary-section-container a:not(.btn-primary) {
     border-bottom: none; }
-  /* line 1568, ../sass/curekids.scss */
+  /* line 1730, ../sass/curekids.scss */
   .primary-section-container .primary-section {
-    float: left; }
-  /* line 1572, ../sass/curekids.scss */
+    float: left;
+    *zoom: 1; }
+    /* line 38, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/general/_clearfix.scss */
+    .primary-section-container .primary-section:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (max-width: 1150px) {
+      /* line 1730, ../sass/curekids.scss */
+      .primary-section-container .primary-section {
+        max-width: 720px;
+        margin: 0 auto;
+        float: none; } }
+    @media screen and (max-width: 800px) {
+      /* line 1730, ../sass/curekids.scss */
+      .primary-section-container .primary-section {
+        display: none; } }
+  /* line 1745, ../sass/curekids.scss */
   .primary-section-container .footer-primary-aside {
     float: left;
     *zoom: 1; }
@@ -2132,13 +2295,22 @@ input.ck-profile-donate-input {
       content: "";
       display: table;
       clear: both; }
-    /* line 1576, ../sass/curekids.scss */
+    /* line 1749, ../sass/curekids.scss */
+    .primary-section-container .footer-primary-aside .footer-logos {
+      display: inline; }
+      @media screen and (max-width: 440px) {
+        /* line 1749, ../sass/curekids.scss */
+        .primary-section-container .footer-primary-aside .footer-logos {
+          display: block;
+          width: 211px;
+          margin: 0 auto; } }
+    /* line 1759, ../sass/curekids.scss */
     .primary-section-container .footer-primary-aside hr {
       margin: 15px 0;
       height: 1px;
       background-color: rgba(255, 255, 255, 0.15);
       border: none; }
-    /* line 1583, ../sass/curekids.scss */
+    /* line 1766, ../sass/curekids.scss */
     .primary-section-container .footer-primary-aside .contact-info {
       max-width: 265px;
       margin: 0px auto 0;
@@ -2148,25 +2320,46 @@ input.ck-profile-donate-input {
         content: "";
         display: table;
         clear: both; }
-    /* line 1589, ../sass/curekids.scss */
+    /* line 1772, ../sass/curekids.scss */
     .primary-section-container .footer-primary-aside .address, .primary-section-container .footer-primary-aside .phone-numbers {
       margin-top: 7px;
+      margin-bottom: 0px;
       float: left;
       line-height: 20px;
       font-size: 14px;
       color: #b9b5b0;
       text-decoration: none;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
-    /* line 1599, ../sass/curekids.scss */
+    /* line 1783, ../sass/curekids.scss */
     .primary-section-container .footer-primary-aside .phone-numbers {
       margin-left: 22px; }
-    /* line 1604, ../sass/curekids.scss */
+      /* line 1786, ../sass/curekids.scss */
+      .primary-section-container .footer-primary-aside .phone-numbers a {
+        color: #b9b5b0; }
+    /* line 1791, ../sass/curekids.scss */
     .primary-section-container .footer-primary-aside .btn-primary, .primary-section-container .footer-primary-aside .btn-secondary {
       position: relative;
       bottom: 14px; }
-  /* line 1610, ../sass/curekids.scss */
+      @media screen and (max-width: 440px) {
+        /* line 1791, ../sass/curekids.scss */
+        .primary-section-container .footer-primary-aside .btn-primary, .primary-section-container .footer-primary-aside .btn-secondary {
+          display: block;
+          margin-top: 30px;
+          text-align: center; } }
+    @media screen and (max-width: 1150px) {
+      /* line 1745, ../sass/curekids.scss */
+      .primary-section-container .footer-primary-aside {
+        max-width: 365px;
+        margin: 35px auto 0;
+        float: none; } }
+    @media screen and (max-width: 800px) {
+      /* line 1745, ../sass/curekids.scss */
+      .primary-section-container .footer-primary-aside {
+        margin-top: 0; } }
+  /* line 1813, ../sass/curekids.scss */
   .primary-section-container .logo {
     display: inline-block;
+    float: left;
     width: 149px;
     height: 43px;
     margin: 0 13px 0 0;
@@ -2174,12 +2367,25 @@ input.ck-profile-donate-input {
     white-space: nowrap;
     overflow: hidden;
     background-image: url(../img/footer-logo.svg); }
+  @media screen and (max-width: 1150px) {
+    /* line 1721, ../sass/curekids.scss */
+    .primary-section-container {
+      width: 90%; } }
+  @media screen and (max-width: 850px) {
+    /* line 1721, ../sass/curekids.scss */
+    .primary-section-container {
+      width: 100%;
+      padding: 0 28px; } }
 
-/* line 1622, ../sass/curekids.scss */
+/* line 1835, ../sass/curekids.scss */
 .ecfa-badge {
   margin: 0 15px 0 0; }
+  @media screen and (max-width: 440px) {
+    /* line 1835, ../sass/curekids.scss */
+    .ecfa-badge {
+      margin: 0; } }
 
-/* line 1626, ../sass/curekids.scss */
+/* line 1843, ../sass/curekids.scss */
 a.footer-cta {
   padding: 9px 16px 8px;
   position: relative;
@@ -2195,36 +2401,36 @@ a.footer-cta {
   background-color: #198c45;
   box-shadow: 0px 2px 0px 0px #797068; }
 
-/* line 1643, ../sass/curekids.scss */
+/* line 1860, ../sass/curekids.scss */
 .footer-col-header {
   margin: 0 0 4px 0;
   font-size: 18px;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45); }
 
-/* line 1650, ../sass/curekids.scss */
+/* line 1867, ../sass/curekids.scss */
 .footer-link-list {
   margin-top: 0px;
   padding-left: 0px;
   list-style-type: none;
   line-height: 20px; }
 
-/* line 1657, ../sass/curekids.scss */
+/* line 1874, ../sass/curekids.scss */
 .footer-col {
   margin: 0 40px 0 0;
   float: left; }
-  /* line 1661, ../sass/curekids.scss */
+  /* line 1878, ../sass/curekids.scss */
   .footer-col:last-child {
     margin-right: 27px; }
-  /* line 1665, ../sass/curekids.scss */
+  /* line 1882, ../sass/curekids.scss */
   .footer-col .first-col {
     float: left;
     margin-right: 18px; }
-  /* line 1670, ../sass/curekids.scss */
+  /* line 1887, ../sass/curekids.scss */
   .footer-col .second-col {
     float: left; }
 
-/* line 1675, ../sass/curekids.scss */
+/* line 1892, ../sass/curekids.scss */
 a.footer-link {
   font-size: 14px;
   color: #b9b5b0;
@@ -2234,31 +2440,39 @@ a.footer-link {
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out; }
-  /* line 1682, ../sass/curekids.scss */
+  /* line 1899, ../sass/curekids.scss */
   a.footer-link:hover {
     color: rgba(255, 255, 255, 0.75); }
 
-/* line 1687, ../sass/curekids.scss */
+/* line 1904, ../sass/curekids.scss */
 .lower-section-container {
   margin: 40px 0 0 0;
   padding: 25px 0;
   border-top: 1px solid #948a80;
   background-color: #70655c; }
 
-/* line 1694, ../sass/curekids.scss */
+/* line 1911, ../sass/curekids.scss */
 .lower-section {
   max-width: 1080px;
   margin: 0 auto;
   position: relative; }
-  /* line 1699, ../sass/curekids.scss */
+  /* line 1916, ../sass/curekids.scss */
   .lower-section small {
     display: block;
-    max-width: 700px;
+    max-width: 640px;
     margin: 0 0 13px 0;
     font-size: 12px;
     line-height: 19px;
     color: rgba(185, 181, 176, 0.75); }
-  /* line 1708, ../sass/curekids.scss */
+    @media screen and (max-width: 950px) {
+      /* line 1916, ../sass/curekids.scss */
+      .lower-section small {
+        display: block;
+        max-width: inherit;
+        margin: 0 0 20px 0;
+        text-align: center;
+        float: none; } }
+  /* line 1933, ../sass/curekids.scss */
   .lower-section a {
     font-size: 12px;
     text-decoration: none;
@@ -2268,11 +2482,51 @@ a.footer-link {
     -o-transition: all 0.1s ease-in-out;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out; }
-    /* line 1715, ../sass/curekids.scss */
+    /* line 1940, ../sass/curekids.scss */
     .lower-section a:hover {
       color: rgba(255, 255, 255, 0.75); }
+  @media screen and (max-width: 1150px) {
+    /* line 1911, ../sass/curekids.scss */
+    .lower-section {
+      width: 90%; } }
+  @media screen and (max-width: 850px) {
+    /* line 1911, ../sass/curekids.scss */
+    .lower-section {
+      width: 100%;
+      padding: 0 28px; } }
 
-/* line 1721, ../sass/curekids.scss */
+/* line 1955, ../sass/curekids.scss */
+.secondary-link-lists {
+  *zoom: 1;
+  margin: 0; }
+  /* line 38, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/general/_clearfix.scss */
+  .secondary-link-lists:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (max-width: 950px) {
+    /* line 1955, ../sass/curekids.scss */
+    .secondary-link-lists {
+      display: block;
+      max-width: 640px;
+      margin: 0px auto 0;
+      text-align: center; }
+      /* line 1965, ../sass/curekids.scss */
+      .secondary-link-lists ul {
+        text-align: center; }
+      /* line 1969, ../sass/curekids.scss */
+      .secondary-link-lists .wordpress-link {
+        white-space: pre;
+        padding-top: 10px; } }
+  @media screen and (max-width: 760px) {
+    /* line 1976, ../sass/curekids.scss */
+    .secondary-link-lists ul {
+      display: block;
+      margin: inherit;
+      float: none;
+      text-align: center; } }
+
+/* line 1985, ../sass/curekids.scss */
 .secondary-link-list {
   margin-right: 55px;
   font-size: 12px;
@@ -2284,33 +2538,54 @@ a.footer-link {
     content: "";
     display: table;
     clear: both; }
-  /* line 1728, ../sass/curekids.scss */
+  /* line 1992, ../sass/curekids.scss */
   .secondary-link-list li {
     float: left; }
-    /* line 1731, ../sass/curekids.scss */
+    /* line 1995, ../sass/curekids.scss */
     .secondary-link-list li:not(:last-child):after {
       content: "|";
       margin: 0 10px;
       color: rgba(185, 181, 176, 0.5); }
+    @media screen and (max-width: 950px) {
+      /* line 1992, ../sass/curekids.scss */
+      .secondary-link-list li {
+        display: inline;
+        float: none; } }
+  @media screen and (max-width: 950px) {
+    /* line 1985, ../sass/curekids.scss */
+    .secondary-link-list {
+      padding-top: 10px; } }
 
-/* line 1739, ../sass/curekids.scss */
-.wordpress-link {
-  position: relative;
-  top: 11px; }
-
-/* line 1744, ../sass/curekids.scss */
+/* line 2012, ../sass/curekids.scss */
 .social-media-links {
   position: absolute;
   right: 0px;
-  top: 5px; }
+  top: 5px;
+  *zoom: 1; }
+  /* line 38, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/general/_clearfix.scss */
+  .social-media-links:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (max-width: 950px) {
+    /* line 2012, ../sass/curekids.scss */
+    .social-media-links {
+      display: block;
+      width: 210px;
+      margin: 0 auto 10px;
+      clear: both;
+      position: static; } }
 
-/* line 1750, ../sass/curekids.scss */
+/* line 2027, ../sass/curekids.scss */
 .social-media-item {
   display: block;
   float: left;
   margin-right: 5px; }
+  /* line 2032, ../sass/curekids.scss */
+  .social-media-item:last-child {
+    margin-right: 0; }
 
-/* line 1756, ../sass/curekids.scss */
+/* line 2037, ../sass/curekids.scss */
 a.social-media-link {
   display: block;
   width: 38px;
@@ -2320,35 +2595,35 @@ a.social-media-link {
   overflow: hidden;
   border: none;
   background-repeat: no-repeat; }
-  /* line 1766, ../sass/curekids.scss */
+  /* line 2047, ../sass/curekids.scss */
   a.social-media-link:last-child {
     margin: 0; }
 
-/* line 1771, ../sass/curekids.scss */
+/* line 2052, ../sass/curekids.scss */
 .facebook-link {
   background-image: url(../img/social-media-icons.svg);
   background-size: 188px;
   background-position: -75px; }
 
-/* line 1777, ../sass/curekids.scss */
+/* line 2058, ../sass/curekids.scss */
 .twitter-link {
   background-image: url(../img/social-media-icons.svg);
   background-size: 188px;
   background-position: -112px; }
 
-/* line 1783, ../sass/curekids.scss */
+/* line 2064, ../sass/curekids.scss */
 .youtube-link {
   background-image: url(../img/social-media-icons.svg);
   background-size: 188px;
   background-position: -37px; }
 
-/* line 1789, ../sass/curekids.scss */
+/* line 2070, ../sass/curekids.scss */
 a.app-store-link {
   background-image: url(../img/social-media-icons.svg);
   background-size: 188px;
   background-position: -150px; }
 
-/* line 1795, ../sass/curekids.scss */
+/* line 2076, ../sass/curekids.scss */
 .amazon-link {
   background-image: url(../img/social-media-icons.svg);
   background-size: 188px; }
