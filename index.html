@@ -111,10 +111,8 @@
                     <div class="ck-profile-header-col-1">
                         <h2 class="ck-profile-name">Kabirou</h3>
                         <span class="ck-profile-country">From Zambia</span>
+                        <a href="#" class="btn-ck-follow btn-ck-follow-mobile btn-secondary">Follow</a>
                     </div>
-
-                    <a href="#" class="btn-ck-follow btn-ck-follow-mobile btn-secondary">Follow</a>
-
                     <div class="ck-profile-header-col-2">
                         <a href="#" class="btn-ck-follow btn-secondary">Follow</a>
                         <ul class="ck-profile-info">
@@ -179,8 +177,7 @@
                             definitely back in action! It was a great day for him, and us!
                             </p>
     
-                            <a href="#" class="ck-profile-get-well-inline-media">
-                                <img src="img/zoom-icon.svg" alt="play icon" class="zoom-icon">
+                            <a href="#" class="ck-profile-get-well-inline-media ck-profile-get-well-inline-photo">                            
                                 <img src="img/get-well-video-placeholder.png" alt="Photo of Kabirou" class="get-well-media-poster">
                             </a>
                         </div>
@@ -202,8 +199,7 @@
                             and doing well! 
                             </p>
     
-                            <a href="#" class="ck-profile-get-well-inline-media">
-                                <img src="img/zoom-icon.svg" alt="zoom icon" class="zoom-icon">
+                            <a href="#" class="ck-profile-get-well-inline-media ck-profile-get-well-inline-video">                            
                                 <img src="img/get-well-photo-placeholder.png" alt="Photo of Kabirou" class="get-well-media-poster">
                             </a>
                         </div>
@@ -229,8 +225,7 @@
                             definitely back in action! It was a great day for him, and us!
                             </p>
                         
-                            <a href="#" class="ck-profile-get-well-inline-media">
-                                <img src="img/zoom-icon.svg" alt="play icon" class="zoom-icon">
+                            <a href="#" class="ck-profile-get-well-inline-media ck-profile-get-well-inline-photo">
                                 <img src="img/get-well-video-placeholder.png" alt="Photo of Kabirou" class="get-well-media-poster">
                             </a>
                         </div>
@@ -255,11 +250,14 @@
     
                         <form action="" class="send-get-well-message-form">
                             <textarea name="get-well-message-content" cols="30" rows="10" class="send-get-well-message-form-input" placeholder="Enter your get well message here..."></textarea>
-                            <a href="#" class="btn-ck-profile-get-well-add-photo">Add Photo</a>
-                            <a href="#" class="btn-ck-profile-get-well-add-video">Add Video</a>
-                            <div class="get-well-form-checkbox-container">
-                                <input type="checkbox" class="get-well-form-checkbox" id="send-anonymous-checkbox">
-                                <label class="get-well-form-checkbox-label" for="send-anonymous-checkbox">Send Anonymously</label>
+                            <button class="get-well-options-toggle">Options</button>
+                            <div class="get-well-options">
+                                <a href="#" class="btn-ck-profile-get-well-add-photo">Add Photo</a>
+                                <a href="#" class="btn-ck-profile-get-well-add-video">Add Video</a>
+                                <div class="get-well-form-checkbox-container">
+                                    <input type="checkbox" class="get-well-form-checkbox" id="send-anonymous-checkbox">
+                                    <label class="get-well-form-checkbox-label" for="send-anonymous-checkbox">Send Anonymously</label>
+                                </div>
                             </div>
                             <input type="submit" class="btn-submit btn-secondary get-well-btn-submit" value="Send Message">
                         </form>
@@ -389,38 +387,38 @@
 
             <div class="other-kids-container">
                 <h3 class="header-other-kids">Other Kids Like Kabirou</h3>
-                <div class="other-kid-container">
-                    <h5 class="other-kid-name">Vincent</h5>
+                <a href ="#" class="other-kid-container">
+                    <h5 class="other-kid-name">Endebilehat</h5>
                     <ul class="other-kid-info">
                         <li class="other-kid-country">Zambia</li>
                         <li class="other-kid age">Age: 2</li>
                     </ul>
                     <img src="img/other-kid-placeholder-1.jpg" alt="Photo of Vincent" class="other-kid-image">
-                </div>
-                <div class="other-kid-container">
+                </a>
+                <a class="other-kid-container">
                     <h5 class="other-kid-name">Elisa</h5>
                     <ul class="other-kid-info">
                         <li class="other-kid-country">Ethiopia</li>
                         <li class="other-kid age">Age: 1</li>
                     </ul>
                     <img src="img/other-kid-placeholder-2.jpg" alt="Photo of Ethiopia" class="other-kid-image">
-                </div>
-                <div class="other-kid-container">
+                </a>
+                <a href ="#" class="other-kid-container">
                     <h5 class="other-kid-name">Regina</h5>
                     <ul class="other-kid-info">
                         <li class="other-kid-country">Kenya</li>
                         <li class="other-kid age">Age: 3</li>
                     </ul>
                     <img src="img/other-kid-placeholder-3.jpg" alt="Photo of Kenya" class="other-kid-image">
-                </div>
-                <div class="other-kid-container">
+                </a>
+                <a href ="#" class="other-kid-container">
                     <h5 class="other-kid-name">Blessing</h5>
                     <ul class="other-kid-info">
                         <li class="other-kid-country">Kenya</li>
                         <li class="other-kid age">Age: 1</li>
                     </ul>
                     <img src="img/other-kid-placeholder-4.jpg" alt="Photo of Kenya" class="other-kid-image">
-                </div>
+                </a>
             </div>
         </main>
 
@@ -467,8 +465,10 @@
                 </div>
 
                 <aside class="footer-primary-aside">
-                    <a href="/" class="logo">CURE</a>
-                    <a href="/finances"><img src="img/ecfa-badge-footer.jpg" alt="ECFA Accredited" class="ecfa-badge" /></a>
+                    <div class="footer-logos">
+                        <a href="/" class="logo">CURE</a>
+                        <a href="/finances"><img src="img/ecfa-badge-footer.jpg" alt="ECFA Accredited" class="ecfa-badge" /></a>
+                    </div>
                     <a href="/donate" class="btn-primary">Donate Now</a>
 
                     <hr>
@@ -490,22 +490,27 @@
                     <small>
                         CURE International is a 501(c)3 tax exempt organization. Donations and contributions are tax deductible as allowed by law. Site design and logo are ©2010 - 2014
                     </small>
-                    <ul class="secondary-link-list">
-                        <li><a href="#" class="secondary-link">Privacy Policy</a></li>
-                        <li><a href="#" class="secondary-link">Contact Us</a></li>
-                    </ul>
-                    <ul class="secondary-link-list">
-                        <li><a href="http://cure.org" class="secondary-link">United States</a></li>
-                        <li><a href="http://uk.cure.org" class="secondary-link">United Kingdom</a></li>
-                        <li><a href="http://cureinternationalindia.org" class="secondary-link">India</a></li>
-                    </ul>
-                    <a href="http://wordpress.org" class="wordpress-link">Powered by Wordpress</a>
+
                     <ul class="social-media-links">
                         <li class="social-media-item"><a target="_blank" href="http://facebook.com/cureinternational" class="social-media-link facebook-link">Facebook</a></li>
                         <li class="social-media-item"><a target="_blank" href="http://twitter.com/curetweets" class="social-media-link twitter-link">Twitter</a></li>
                         <li class="social-media-item"><a target="_blank" href="http://youtube.com/cureinternational" class="social-media-link youtube-link">Youtube</a></li>
                         <li class="social-media-item"><a target="_blank" href="https://itunes.apple.com/us/app/curekids/id638358232" class="social-media-link app-store-link">App Store</a></li>
                         <li class="social-media-item"><a target="_blank" href="http://smile.amazon.com/ch/58-2248383" class="social-media-link amazon-link">Amazon</a></li>
+                    </ul>
+                    
+                    <ul class="secondary-link-lists">
+                        <ul class="secondary-link-list">
+                            <li><a href="#" class="secondary-link">Privacy Policy</a></li>
+                            <li><a href="#" class="secondary-link">Contact Us</a></li>
+                        </ul>
+                        
+                        <ul class="secondary-link-list">
+                            <li><a href="http://cure.org" class="secondary-link">United States</a></li>
+                            <li><a href="http://uk.cure.org" class="secondary-link">United Kingdom</a></li>
+                            <li><a href="http://cureinternationalindia.org" class="secondary-link">India</a></li>
+                        </ul>
+                        <li class="wordpress-link"><a href="http://wordpress.org">Powered by Wordpress</a></li>
                     </ul>
                 </section>
             </div>
