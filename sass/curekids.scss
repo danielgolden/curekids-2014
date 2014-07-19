@@ -1040,6 +1040,16 @@ div[data-liffect="bounceInUp"].play .ck-profile-photo-thumb {
 	}
 }
 
+.ck-profile-update-container {
+	@media screen and (max-width: 850px) {
+		display: none;
+
+		&:nth-of-type(1), &:nth-of-type(2) {
+			display: block;
+		}
+	}
+}
+
 a.ck-profile-get-well-inline-media {
 	width: 75px;
 	height: 75px;
@@ -1047,6 +1057,7 @@ a.ck-profile-get-well-inline-media {
 	display: block;
 	position: relative;
 	float: right;
+	margin: 30px 0 0 10px;
 	border: none;
 	@include border-radius(5px);
 
